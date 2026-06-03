@@ -282,13 +282,13 @@ buyEnergy();
 ```
 
 {% hint style="info" %}
-**更喜欢用 SDK？** 如果你使用 Node.js，用它上手会更快：
+**更喜欢用 SDK？** [SDK](sdk.md)（TypeScript、Rust、Python、Java 和 PHP）能让你更快上手：
 
 ```bash
 npm install tronsave-sdk
 ```
 
-请参阅 SDK 文档。
+这会安装 TypeScript 包；其他语言请参阅 [SDK](sdk.md) 页面。
 {% endhint %}
 
 ## 测试环境（Nile 测试网）
