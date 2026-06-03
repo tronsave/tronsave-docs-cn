@@ -9,7 +9,7 @@ description: TronSave 为买家和供应商带来的具体优势。
 * **节省高达约 92%** 的 TRON 交易费用——通过租赁能量来替代销毁 TRX。
 * **几秒内完成租赁**——无论是个人还是项目方，都能在网页、Telegram 和 API 上获得简单流畅的操作体验。
 * **按需付费**——为每笔订单选择[数量、时长和价格档位](../concepts/order-types.md)。
-* **自动化操作**——集成 [API](../developers/quickstart.md) 或 [SDK](../developers/sdk/README.md)，让你的应用以编程方式自动补充资源。
+* **自动化操作**——集成 [API](../developers/quickstart.md) 或 SDK，让你的应用以编程方式自动补充资源。
 
 ## 对于供应商（卖家）
 
