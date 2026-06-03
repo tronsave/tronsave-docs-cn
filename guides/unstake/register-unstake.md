@@ -2,7 +2,7 @@
 description: 在 TronSave 上注册提前解质押，无需等待官方解质押期即可即时取回已质押的 TRX，需支付浮动服务费。
 ---
 
-# 注册解质押
+# 注册解除质押
 
 **提前解质押**让你无需等待 TRON 官方解质押期，即可立即取回已质押的 TRX。它能让你更快获得流动性，并根据解质押金额收取浮动服务费。
 
@@ -12,13 +12,13 @@ description: 在 TronSave 上注册提前解质押，无需等待官方解质押
 
 ### 步骤 1 – 连接钱包并登录
 
-* 打开[提前解质押](https://tronsave.io/tools/unstake)页面。
+* 打开[提前解质押](https://tronsave.io/unstake)页面。
 * 连接你想要解质押的钱包，然后点击 **Login with TronSave**。
 
 ### 步骤 2 – 阅读条款
 
 * 仔细阅读所有**条款**。
-* 在继续之前，勾选 _I confirm that I have read and understood all Early Unstake terms and conditions_ 复选框。
+* 在继续之前，勾选 "我已阅读并理解所有提前解 staked 的条款和条件" 复选框。
 
 <figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FI623FjNHjCwdcvyqZlPv%2Fimage.png?alt=media&#x26;token=958fb01e-aee3-46bc-9bd5-b331193987e3" alt=""><figcaption></figcaption></figure>
 
@@ -38,14 +38,12 @@ description: 在 TronSave 上注册提前解质押，无需等待官方解质押
 
 #### 此步骤的流动性检查
 
-* 如果解质押金额超过当前系统流动性，你的请求需要管理员和供应商手动审批。审批通过后，你可以继续进行[步骤 5](#step-5-check-balance)。
-* {% hint style="info" %}
-  **建议：**加入我们的 Bot，以便在请求获批时即时收到通知。
-  {% endhint %}
+* 如果解质押金额超过当前系统流动性，你的请求需要管理员和供应商手动审批。审批通过后，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
+* <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>**建议：**加入我们的 Bot，以便在请求获批时即时收到通知。</p></div>
 
 <figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FaUNoQ28DQxk9g4XpcjvO%2Fimage.png?alt=media&#x26;token=004576ef-2d0b-45f8-b95f-0531e3977634" alt="" width="563"><figcaption></figcaption></figure>
 
-* 如果系统流动性充足，你的请求将自动获批，你可以继续进行[步骤 5](#step-5-check-balance)。
+* 如果系统流动性充足，你的请求将自动获批，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
 
 <figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FUAgdqUNnu0jKvXWZ4WIw%2Fimage.png?alt=media&#x26;token=120505e1-57d2-4d21-9603-932ecc47c198" alt="" width="563"><figcaption></figcaption></figure>
 

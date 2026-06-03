@@ -2,10 +2,10 @@
 description: 使用你自己的私钥签名 TRX 交易，通过 TronSave v0 API 购买能量的完整可运行示例。
 ---
 
-# 使用私钥购买能量（v0）
+# v0 — 使用私钥购买
 
 {% hint style="warning" %}
-**旧版示例。** 本页使用 **v0** TronSave API 和 **TronWeb 5.3.2**，仅供参考及向后兼容之用。对于新的集成，请使用 [购买资源](../../api-reference/buy-resources/README.md) 中当前的签名交易流程以及 [开发者快速开始](../../quickstart.md)。
+**旧版示例。** 本页使用 **v0** TronSave API 和 **TronWeb 5.3.2**，仅供参考及向后兼容之用。对于新的集成，请使用 [购买资源](../api-reference/buy-resources/) 中当前的签名交易流程以及 [开发者快速开始](../quickstart.md)。
 {% endhint %}
 
 本示例展示了完整的签名交易流程：预估成本、使用你的私钥签名一笔转向 TronSave 接收地址的 TRX 转账、并创建购买订单——整个过程无需向内部账户充值 TRX。
@@ -24,16 +24,11 @@ npm i tronweb@5.3.2 @noble/secp256k1@1.7.1
 
 本示例读取四个端点/地址常量。其取值在主网与 Nile（测试网）之间有所不同：
 
-<table>
-<thead>
-<tr><th>常量</th><th>主网</th><th>测试网（Nile）</th></tr>
-</thead>
-<tbody>
-<tr><td><code>TRONSAVE_RECEIVER_ADDRESS</code></td><td><code>TWZEhq5JuUVvGtutNgnRBATbF8BnHGyn4S</code></td><td><code>TATT1UzHRikft98bRFqApFTsaSw73ycfoS</code></td></tr>
-<tr><td><code>TRON_FULLNODE</code></td><td><code>https://api.trongrid.io</code></td><td><code>https://api.nileex.io</code></td></tr>
-<tr><td><code>TRONSAVE_API_URL</code></td><td><code>https://api.tronsave.io</code></td><td><code>https://api-dev.tronsave.io</code></td></tr>
-</tbody>
-</table>
+| 常量                          | 主网                                   | 测试网（Nile）                            |
+| --------------------------- | ------------------------------------ | ------------------------------------ |
+| `TRONSAVE_RECEIVER_ADDRESS` | `TWZEhq5JuUVvGtutNgnRBATbF8BnHGyn4S` | `TATT1UzHRikft98bRFqApFTsaSw73ycfoS` |
+| `TRON_FULLNODE`             | `https://api.trongrid.io`            | `https://api.nileex.io`              |
+| `TRONSAVE_API_URL`          | `https://api.tronsave.io`            | `https://api-dev.tronsave.io`        |
 
 运行前请设置 `PRIVATE_KEY`、`REQUEST_ADDRESS` 和 `TARGET_ADDRESS`。`BUY_AMOUNT` 和 `DURATION` 可根据你的订单进行修改。
 
@@ -203,6 +198,6 @@ BuyEnergyUsingPrivateKey()
 
 ## 后续步骤
 
-- 迁移到当前 API：[购买资源](../../api-reference/buy-resources/README.md)
-- 比较认证方式：[认证](../../authentication.md)
-- 了解租赁模型：[核心概念 → 租赁模型](../../../concepts/rental-model.md)
+* 迁移到当前 API：[购买资源](../api-reference/buy-resources/)
+* 比较认证方式：[认证](../authentication.md)
+* 了解租赁模型：[核心概念 → 租赁模型](../../concepts/rental-model.md)

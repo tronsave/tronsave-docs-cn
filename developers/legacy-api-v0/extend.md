@@ -2,10 +2,10 @@
 description: 使用 API 密钥延长 TronSave 资源代理的 v0 旧版流程 —— 先检查可延长的代理，然后创建延长请求。
 ---
 
-# 使用 REST API 延长（v0）
+# 延长
 
 {% hint style="warning" %}
-**旧版 API。** 此处描述的 v0 端点为向后兼容而保留。新的集成应改用当前的 [API 参考](../api-reference/README.md)。
+**旧版 API。** 此处描述的 v0 端点为向后兼容而保留。新的集成应改用当前的 [API 参考](../api-reference/)。
 {% endhint %}
 
 要使用此功能，您必须拥有 API 密钥。有关如何获取 API 密钥以及它如何与您的内部账户绑定，请参阅[身份验证](../authentication.md)。
@@ -352,6 +352,6 @@ curl --location 'https://api.tronsave.io/v0/internal-extend-request' \
 
 ## 后续步骤
 
-* [使用 REST API 购买（v0）](buy/api-key.md) —— 旧版购买流程。
-* [API 参考](../api-reference/README.md) —— 当前推荐使用的 API。
+* [使用 REST API 购买（v0）](api-key.md) —— 旧版购买流程。
+* [API 参考](../api-reference/) —— 当前推荐使用的 API。
 * [身份验证](../authentication.md) —— 获取并管理您的 API 密钥。

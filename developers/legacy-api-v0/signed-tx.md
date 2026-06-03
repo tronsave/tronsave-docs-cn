@@ -2,31 +2,31 @@
 description: 使用签名交易购买能量的旧版 v0 流程 —— 预估 TRX、生成签名转账并创建订单。
 ---
 
-# 使用签名交易购买（v0）
+# 购买 — 签名交易
 
 {% hint style="warning" %}
-**旧版 API。** 本页介绍位于 `/v0/` 基础路径下的 v0 签名交易流程。新的集成应使用当前 API。参见[使用签名交易购买（v2）](../../api-reference/buy-resources/signed-tx/README.md)。
+**旧版 API。** 本页介绍位于 `/v0/` 基础路径下的 v0 签名交易流程。新的集成应使用当前 API。参见[使用签名交易购买（v2）](../api-reference/buy-resources/signed-tx/)。
 {% endhint %}
 
 签名交易流程让你可以直接从自己的钱包支付 TRX 来购买能量 —— 无需 API 密钥，因为 TRX 转账是用你的私钥签名的。共分三步：
 
-1. [预估 TRX](#step-1-estimate-trx) —— 计算所需数量和租赁时长对应的 TRX。
-2. [获取签名交易](#step-2-get-a-signed-transaction) —— 对向 TronSave 资金地址的 TRX 转账进行签名，可自行签名或通过 API 签名。
-3. [创建订单](#step-3-create-an-order) —— 提交签名交易以下达购买订单。
+1. [预估 TRX](signed-tx.md#step-1-estimate-trx) —— 计算所需数量和租赁时长对应的 TRX。
+2. [获取签名交易](signed-tx.md#step-2-get-a-signed-transaction) —— 对向 TronSave 资金地址的 TRX 转账进行签名，可自行签名或通过 API 签名。
+3. [创建订单](signed-tx.md#step-3-create-an-order) —— 提交签名交易以下达购买订单。
 
 {% hint style="info" %}
 **开始之前：** 请确保你拥有钱包的私钥，并且钱包中持有足够的 TRX 以支付预估费用。
 {% endhint %}
 
-主网基础 URL 为 `https://api.tronsave.io`。如需在 TRON Nile 测试网上进行测试，请使用 `https://api-dev.tronsave.io`。参见[环境](../../environments.md)。
+主网基础 URL 为 `https://api.tronsave.io`。如需在 TRON Nile 测试网上进行测试，请使用 `https://api-dev.tronsave.io`。参见[环境](../environments.md)。
 
-| 步骤 | 方法 | 主网 | 测试网（Nile） |
-| --- | --- | --- | --- |
+| 步骤     | 方法     | 主网                                        | 测试网（Nile）                                     |
+| ------ | ------ | ----------------------------------------- | --------------------------------------------- |
 | 预估 TRX | `POST` | `https://api.tronsave.io/v0/estimate-trx` | `https://api-dev.tronsave.io/v0/estimate-trx` |
-| 获取签名交易 | `POST` | `https://api.tronsave.io/v0/signed-tx` | `https://api-dev.tronsave.io/v0/signed-tx` |
-| 创建订单 | `POST` | `https://api.tronsave.io/v0/buy-energy` | `https://api-dev.tronsave.io/v0/buy-energy` |
+| 获取签名交易 | `POST` | `https://api.tronsave.io/v0/signed-tx`    | `https://api-dev.tronsave.io/v0/signed-tx`    |
+| 创建订单   | `POST` | `https://api.tronsave.io/v0/buy-energy`   | `https://api-dev.tronsave.io/v0/buy-energy`   |
 
----
+***
 
 ## Step 1: 预估 TRX
 
@@ -40,13 +40,13 @@ description: 使用签名交易购买能量的旧版 v0 流程 —— 预估 TRX
 
 ### 请求头
 
-| 请求头 | 值 | 是否必需 |
-| --- | --- | --- |
-| `Content-Type` | `application/json` | 是 |
+| 请求头            | 值                  | 是否必需 |
+| -------------- | ------------------ | ---- |
+| `Content-Type` | `application/json` | 是    |
 
 ### 请求参数
 
-<table><thead><tr><th width="174">字段</th><th width="94">位置</th><th width="92">类型</th><th width="100">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>amount</code></td><td>body</td><td>number</td><td>true</td><td>资源数量</td></tr><tr><td><code>buy_energy_type</code></td><td>body</td><td>string, number</td><td>true</td><td><p>"FAST"、"MEDIUM"、"SLOW" 或数字：</p><p><br>-"FAST"：如果市场可成交率 = 100%，则 FAST = MEDIUM。如果市场可成交率 &#x3C; 100%，则 FAST = MEDIUM + 10。如果市场可成交率 = 0%，则 FAST = SLOW + 20。</p><p></p><p>-"MEDIUM"：使该订单获得最大市场成交量的最低价格。如果市场可成交率 = 0%，则 MEDIUM = SLOW + 10。</p><p></p><p>-"SLOW"：该订单可设置的最低价格。</p><p></p><p>-如果价格为数字，则价格单位等于 SUN</p></td></tr><tr><td><code>duration_millisec</code></td><td>body</td><td>number</td><td>true</td><td>所购资源的时长，时间单位为毫秒。</td></tr><tr><td><code>request_address</code></td><td>body</td><td>string</td><td>false</td><td>请求者的地址。</td></tr><tr><td><code>target_address</code></td><td>body</td><td>string</td><td>false</td><td>资源接收地址。</td></tr><tr><td><code>is_partial</code></td><td>body</td><td>boolean</td><td>false</td><td>是否允许订单被部分成交。</td></tr></tbody></table>
+<table><thead><tr><th width="174">字段</th><th width="94">位置</th><th width="92">类型</th><th width="100">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>amount</code></td><td>body</td><td>number</td><td>true</td><td>资源数量</td></tr><tr><td><code>buy_energy_type</code></td><td>body</td><td>string, number</td><td>true</td><td><p>"FAST"、"MEDIUM"、"SLOW" 或数字：</p><p><br>-"FAST"：如果市场可成交率 = 100%，则 FAST = MEDIUM。如果市场可成交率 &#x3C; 100%，则 FAST = MEDIUM + 10。如果市场可成交率 = 0%，则 FAST = SLOW + 20。</p><p>-"MEDIUM"：使该订单获得最大市场成交量的最低价格。如果市场可成交率 = 0%，则 MEDIUM = SLOW + 10。</p><p>-"SLOW"：该订单可设置的最低价格。</p><p>-如果价格为数字，则价格单位等于 SUN</p></td></tr><tr><td><code>duration_millisec</code></td><td>body</td><td>number</td><td>true</td><td>所购资源的时长，时间单位为毫秒。</td></tr><tr><td><code>request_address</code></td><td>body</td><td>string</td><td>false</td><td>请求者的地址。</td></tr><tr><td><code>target_address</code></td><td>body</td><td>string</td><td>false</td><td>资源接收地址。</td></tr><tr><td><code>is_partial</code></td><td>body</td><td>boolean</td><td>false</td><td>是否允许订单被部分成交。</td></tr></tbody></table>
 
 ### 请求体示例
 
@@ -88,7 +88,7 @@ description: 使用签名交易购买能量的旧版 v0 流程 —— 预估 TRX
 }
 ```
 
----
+***
 
 ## Step 2: 获取签名交易
 
@@ -139,13 +139,13 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 
 #### 请求头
 
-| 请求头 | 值 | 是否必需 |
-| --- | --- | --- |
-| `Content-Type` | `application/json` | 是 |
+| 请求头            | 值                  | 是否必需 |
+| -------------- | ------------------ | ---- |
+| `Content-Type` | `application/json` | 是    |
 
 #### 请求参数
 
-<table><thead><tr><th width="166">字段</th><th width="112">位置</th><th width="110">类型</th><th width="101">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>address</code></td><td>body</td><td>string</td><td>true</td><td>买家的公开地址</td></tr><tr><td><code>private_key</code></td><td>body</td><td>string</td><td>true</td><td>买家的私钥</td></tr><tr><td><code>estimate_trx</code></td><td>body</td><td>number</td><td>true</td><td>需支付的 TRX 数量，以 SUN 计算。（来自<a href="#step-1-estimate-trx">第 1 步</a>的 <code>estimate_trx</code>）</td></tr></tbody></table>
+<table><thead><tr><th width="166">字段</th><th width="112">位置</th><th width="110">类型</th><th width="101">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>address</code></td><td>body</td><td>string</td><td>true</td><td>买家的公开地址</td></tr><tr><td><code>private_key</code></td><td>body</td><td>string</td><td>true</td><td>买家的私钥</td></tr><tr><td><code>estimate_trx</code></td><td>body</td><td>number</td><td>true</td><td>需支付的 TRX 数量，以 SUN 计算。（来自<a href="signed-tx.md#step-1-estimate-trx">第 1 步</a>的 <code>estimate_trx</code>）</td></tr></tbody></table>
 
 #### 请求体示例
 
@@ -159,7 +159,7 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 
 #### 响应
 
-##### 成功
+**成功**
 
 ```json
 {
@@ -189,7 +189,7 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 }
 ```
 
-##### 错误
+**错误**
 
 此端点不需要 `apikey` 请求头。当请求缺少必需字段或字段无效时，会返回 `400 Bad Request`，其 `message` 会指出出错的字段：
 
@@ -202,7 +202,7 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 }
 ```
 
----
+***
 
 ## Step 3: 创建订单
 
@@ -216,9 +216,9 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 
 ### 请求头
 
-| 请求头 | 值 | 是否必需 |
-| --- | --- | --- |
-| `Content-Type` | `application/json` | 是 |
+| 请求头            | 值                  | 是否必需 |
+| -------------- | ------------------ | ---- |
+| `Content-Type` | `application/json` | 是    |
 
 {% hint style="info" %}
 此端点通过你提交的 `signed_tx` 进行身份验证 —— TRX 付款由你自己的钱包签名 —— 因此不需要 `apikey` 请求头。
@@ -226,7 +226,7 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 
 ### 请求参数
 
-<table><thead><tr><th width="221">字段</th><th width="105">类型</th><th width="91">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>resource_type</code></td><td>string</td><td>true</td><td>"ENERGY"</td></tr><tr><td><code>unit_price</code></td><td>number</td><td>true</td><td>价格单位等于 SUN。</td></tr><tr><td><code>allow_partial_fill</code></td><td>boolean</td><td>true</td><td>是否允许订单被部分成交</td></tr><tr><td><code>target_address</code></td><td>string</td><td>true</td><td>资源接收地址</td></tr><tr><td><code>duration_millisec</code></td><td>number</td><td>true</td><td>所购资源的时长，时间单位等于毫秒。</td></tr><tr><td><code>tx_id</code></td><td>string</td><td>true</td><td>交易 ID</td></tr><tr><td><code>signed_tx</code></td><td>SignedTransaction</td><td>true</td><td>签名交易，请注意它是一个 JSON 对象（来自<a href="#step-2-get-a-signed-transaction">第 2 步</a>的 <code>signed_tx</code>）</td></tr><tr><td><code>only_create_when_fulfilled</code></td><td>Boolean</td><td>false</td><td><p>[true] =&#x3E; 仅当订单可被完全成交时才创建</p><p>[false] =&#x3E; 即使订单无法被完全成交也会创建</p><p>默认值：false</p></td></tr><tr><td><code>max_price_accepted</code></td><td>Number</td><td>false</td><td>仅当预估价格低于此值时才创建订单。</td></tr><tr><td><code>add_order_incomplete</code></td><td>Boolean</td><td>false</td><td><p>[true] =&#x3E; 仅当订单列表中不存在相同参数的未完成订单时才创建订单</p><p>[false] =&#x3E; 即使订单列表中不存在相同参数的未完成订单也会创建订单</p><p>默认值：false</p></td></tr></tbody></table>
+<table><thead><tr><th width="221">字段</th><th width="105">类型</th><th width="91">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>resource_type</code></td><td>string</td><td>true</td><td>"ENERGY"</td></tr><tr><td><code>unit_price</code></td><td>number</td><td>true</td><td>价格单位等于 SUN。</td></tr><tr><td><code>allow_partial_fill</code></td><td>boolean</td><td>true</td><td>是否允许订单被部分成交</td></tr><tr><td><code>target_address</code></td><td>string</td><td>true</td><td>资源接收地址</td></tr><tr><td><code>duration_millisec</code></td><td>number</td><td>true</td><td>所购资源的时长，时间单位等于毫秒。</td></tr><tr><td><code>tx_id</code></td><td>string</td><td>true</td><td>交易 ID</td></tr><tr><td><code>signed_tx</code></td><td>SignedTransaction</td><td>true</td><td>签名交易，请注意它是一个 JSON 对象（来自<a href="signed-tx.md#step-2-get-a-signed-transaction">第 2 步</a>的 <code>signed_tx</code>）</td></tr><tr><td><code>only_create_when_fulfilled</code></td><td>Boolean</td><td>false</td><td><p>[true] => 仅当订单可被完全成交时才创建</p><p>[false] => 即使订单无法被完全成交也会创建</p><p>默认值：false</p></td></tr><tr><td><code>max_price_accepted</code></td><td>Number</td><td>false</td><td>仅当预估价格低于此值时才创建订单。</td></tr><tr><td><code>add_order_incomplete</code></td><td>Boolean</td><td>false</td><td><p>[true] => 仅当订单列表中不存在相同参数的未完成订单时才创建订单</p><p>[false] => 即使订单列表中不存在相同参数的未完成订单也会创建订单</p><p>默认值：false</p></td></tr></tbody></table>
 
 ### 请求体示例
 
@@ -294,9 +294,7 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 }
 ```
 
-<!-- [NEEDS CONFIRMATION: business-logic 400 messages specific to the buy-energy order (e.g. insufficient TRX in the signed transfer, or order cannot be fulfilled) were not captured live] -->
-
----
+***
 
 ## 请求示例
 
@@ -629,6 +627,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ## 后续步骤
 
-* 迁移到当前 API：[使用签名交易购买（v2）](../../api-reference/buy-resources/signed-tx/README.md)。
-* [身份验证](../../authentication.md)和[环境](../../environments.md)。
-* [术语表](../../../concepts/glossary.md)，了解能量、带宽、TRX 和 SUN 的定义。
+* 迁移到当前 API：[使用签名交易购买（v2）](../api-reference/buy-resources/signed-tx/)。
+* [身份验证](../authentication.md)和[环境](../environments.md)。
+* [术语表](../../concepts/glossary.md)，了解能量、带宽、TRX 和 SUN 的定义。

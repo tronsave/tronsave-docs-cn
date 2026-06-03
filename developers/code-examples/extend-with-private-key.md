@@ -2,7 +2,7 @@
 description: 一个完整的可运行示例，演示如何通过用你的私钥在本地构建的签名交易来支付费用，从而延长现有的资源代理（委托）。
 ---
 
-# 使用私钥延长订单
+# v2 — 使用私钥延长
 
 这是一个完整的、可运行的示例，演示如何使用 v2 Extend Orders API 延长现有的资源代理（委托），同时通过本地用你的私钥签名的交易来支付费用。
 
@@ -33,7 +33,7 @@ npm i tronweb@5.3.2 @noble/secp256k1@1.7.1
 请妥善保管你的私钥。仅在受信任的服务器环境中运行此代码 — 切勿在客户端或浏览器代码中暴露 `PRIVATE_KEY`。
 {% endhint %}
 
-完整的主网和测试网端点列表请参阅 [环境](../../environments.md)，端点详情请参阅 [Extend Orders API 参考](../../api-reference/extend-orders/README.md)。
+完整的主网和测试网端点列表请参阅 [环境](../environments.md)，端点详情请参阅 [Extend Orders API 参考](../api-reference/extend-orders/)。
 
 ## 完整示例
 
@@ -407,6 +407,6 @@ if __name__ == "__main__":
 
 ## 后续步骤
 
-- [Extend Orders API 参考](../../api-reference/extend-orders/README.md) — `get-extendable-delegates` 和 `extend-request` 的完整请求和响应结构。
-- [认证](../../authentication.md) — 将私钥/签名交易流程与 API 密钥流程进行对比。
-- [订单类型](../../../concepts/order-types.md) — 了解延长订单与其他订单类型的关系。
+* [Extend Orders API 参考](../api-reference/extend-orders/) — `get-extendable-delegates` 和 `extend-request` 的完整请求和响应结构。
+* [认证](../authentication.md) — 将私钥/签名交易流程与 API 密钥流程进行对比。
+* [订单类型](../../concepts/order-types.md) — 了解延长订单与其他订单类型的关系。

@@ -4,30 +4,6 @@ description: TronSave 文档中通用的标准化术语。
 
 # 术语表
 
-| 术语 | 定义 |
-| --- | --- |
-| **能量（Energy）** | 执行智能合约（例如 USDT TRC‑20 转账）时消耗的 TRON 资源。通过质押 TRX 或在 TronSave 上租赁获得。 |
-| **带宽（Bandwidth）** | 按交易字节大小消耗的 TRON 资源。每笔交易都需要一定的带宽。 |
-| **TRX** | TRON 网络的原生代币。 |
-| **SUN** | TRX 的最小单位。**1 TRX = 1,000,000 SUN。** 所有价格均以 SUN 计价。 |
-| **质押 2.0（Stake 2.0）** | TRON 产生能量/带宽的质押（冻结）机制。是 TronSave 供给的基础。 |
-| **代理（委托，Delegation）** | 在链上将能量/带宽从一个账户授予另一个账户。订单成交后会将资源代理给 `receiver`（接收地址）。 |
-| **供应商/卖家（Provider / Seller）** | 质押 TRX 并将所产生的能量租出（代理）以赚取 APY 的用户。 |
-| **买家（Buyer）** | 从市场租赁能量/带宽的用户。 |
-| **订单簿（Order book）** | 决定市场价格的实时买/卖订单集合。 |
-| **内部账户（Internal Account）** | 由 TronSave 托管的余额，你向其中存入 TRX；API 可以自动从中扣款。与 API 密钥关联。 |
-| **API 密钥（API Key）** | 与你的内部账户关联的私密标识符，用于授权 API 请求。 |
-| **签名交易（Signed Transaction）** | 一种替代的鉴权方式，即每次购买时你用自己的钱包对一笔 TRX 付款进行签名（完全自托管）。 |
-| **`unitPrice`** | 每个资源单位的价格（以 SUN 计），或一个档位：`SLOW` / `MEDIUM` / `FAST`。 |
-| **`resourceType`** | `ENERGY` 或 `BANDWIDTH`。默认为 `ENERGY`。 |
-| **`durationSec`** | 租赁时长（以秒计）。默认 `259200`（3 天）。 |
-| **`receiver`** | 接收所租资源的 TRON 地址。 |
-| **`requester`** | 下单/代表订单的地址（你内部账户的 `representAddress`）。 |
-| **`fulfilledPercent`** | 订单成交状态：`0` 待处理，`1–99` 部分成交，`100` 完全成交。 |
-| **APR / APY** | 供应商收益。公式参见 [定价与 APY](pricing-and-apy.md)。 |
-| **WTRX** | Wrapped TRX（包装 TRX），用于某些 SDK 付款流程。 |
-| **ZapBuy** | 通过直接向机器人地址发送 TRX 来购买能量；固定 1 小时租赁。 |
-| **Fast Charge** | 用于快速能量充值的 API 流程（预估 → 创建 → 跟踪 → 确认）。 |
-| **Nile** | TronSave 使用的 TRON 测试网（`api-dev.tronsave.io`）。 |
+<table><thead><tr><th width="311">术语</th><th>定义</th></tr></thead><tbody><tr><td><strong>能量（Energy）</strong></td><td>执行智能合约（例如 USDT TRC‑20 转账）时消耗的 TRON 资源。通过质押 TRX 或在 TronSave 上租赁获得。</td></tr><tr><td><strong>带宽（Bandwidth）</strong></td><td>按交易字节大小消耗的 TRON 资源。每笔交易都需要一定的带宽。</td></tr><tr><td><strong>TRX</strong></td><td>TRON 网络的原生代币。</td></tr><tr><td><strong>SUN</strong></td><td>TRX 的最小单位。<strong>1 TRX = 1,000,000 SUN。</strong> 所有价格均以 SUN 计价。</td></tr><tr><td><strong>质押 2.0（Stake 2.0）</strong></td><td>TRON 产生能量/带宽的质押（冻结）机制。是 TronSave 供给的基础。</td></tr><tr><td><strong>代理（委托，Delegation）</strong></td><td>在链上将能量/带宽从一个账户授予另一个账户。订单成交后会将资源代理给 <code>receiver</code>（接收地址）。</td></tr><tr><td><strong>供应商/卖家（Provider / Seller）</strong></td><td>质押 TRX 并将所产生的能量租出（代理）以赚取 APY 的用户。</td></tr><tr><td><strong>买家（Buyer）</strong></td><td>从市场租赁能量/带宽的用户。</td></tr><tr><td><strong>订单簿（Order book）</strong></td><td>决定市场价格的实时买/卖订单集合。</td></tr><tr><td><strong>内部账户（Internal Account）</strong></td><td>由 TronSave 托管的余额，你向其中存入 TRX；API 可以自动从中扣款。与 API 密钥关联。</td></tr><tr><td><strong>API 密钥（API Key）</strong></td><td>与你的内部账户关联的私密标识符，用于授权 API 请求。</td></tr><tr><td><strong>签名交易（Signed Transaction）</strong></td><td>一种替代的鉴权方式，即每次购买时你用自己的钱包对一笔 TRX 付款进行签名（完全自托管）。</td></tr><tr><td><strong><code>unitPrice</code></strong></td><td>每个资源单位的价格（以 SUN 计），或一个档位：<code>SLOW</code> / <code>MEDIUM</code> / <code>FAST</code>。</td></tr><tr><td><strong><code>resourceType</code></strong></td><td><code>ENERGY</code> 或 <code>BANDWIDTH</code>。默认为 <code>ENERGY</code>。</td></tr><tr><td><strong><code>durationSec</code></strong></td><td>租赁时长（以秒计）。默认 <code>259200</code>（3 天）。</td></tr><tr><td><strong><code>receiver</code></strong></td><td>接收所租资源的 TRON 地址。</td></tr><tr><td><strong><code>requester</code></strong></td><td>下单/代表订单的地址（你内部账户的 <code>representAddress</code>）。</td></tr><tr><td><strong><code>fulfilledPercent</code></strong></td><td>订单成交状态：<code>0</code> 待处理，<code>1–99</code> 部分成交，<code>100</code> 完全成交。</td></tr><tr><td><strong>APR / APY</strong></td><td>供应商收益。公式参见 <a href="pricing-and-apy.md">定价与 APY</a>。</td></tr><tr><td><strong>WTRX</strong></td><td>Wrapped TRX（包装 TRX），用于某些 SDK 付款流程。</td></tr><tr><td><strong>ZapBuy</strong></td><td>通过直接向机器人地址发送 TRX 来购买能量；固定 1 小时租赁。</td></tr><tr><td><strong>Fast Charge</strong></td><td>用于快速能量充值的 API 流程（预估 → 创建 → 跟踪 → 确认）。</td></tr><tr><td><strong>Nile</strong></td><td>TronSave 使用的 TRON 测试网（<code>api-dev.tronsave.io</code>）。</td></tr></tbody></table>
 
 > 术语标准：在指代 TRON 资源时，将 **能量（Energy）** 和 **带宽（Bandwidth）** 首字母大写书写；**TRX** 和 **SUN** 全大写；字段名使用 `code` 格式。

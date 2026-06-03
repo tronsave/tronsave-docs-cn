@@ -2,14 +2,14 @@
 
 * [README](README.md)
 
-## 快速开始
+## Getting started
 
 * [什么是 TronSave？](getting-started/what-is-tronsave.md)
 * [为什么选择 TronSave？](getting-started/why-tronsave.md)
 * [工作原理](getting-started/how-it-works.md)
 * [快速开始](getting-started/quickstart.md)
 
-## 核心概念
+## Concepts
 
 * [能量与带宽](concepts/energy-and-bandwidth.md)
 * [租赁模式](concepts/rental-model.md)
@@ -18,7 +18,7 @@
 * [定价与 APY](concepts/pricing-and-apy.md)
 * [术语表](concepts/glossary.md)
 
-## 开发者
+## Developers
 
 * [开发者快速开始](developers/quickstart.md)
 * [身份认证](developers/authentication.md)
@@ -26,7 +26,6 @@
 * [错误与速率限制](developers/errors-and-rate-limits.md)
 * [API 参考](developers/api-reference/README.md)
   * [购买资源](developers/api-reference/buy-resources/README.md)
-    * [预估 TRX](developers/api-reference/buy-resources/estimate-trx.md)
     * [签名交易](developers/api-reference/buy-resources/signed-tx/README.md)
       * [预估 TRX](developers/api-reference/buy-resources/signed-tx/estimate-trx.md)
       * [获取签名交易](developers/api-reference/buy-resources/signed-tx/get-signed-transaction.md)
@@ -54,20 +53,20 @@
   * [MCP 服务器](developers/api-reference/mcp.md)
 * [SDK](developers/sdk.md)
 * [代码示例](developers/code-examples/README.md)
-  * [v2 — 使用私钥购买](developers/code-examples/v2/buy-with-private-key.md)
-  * [v2 — 使用 API 密钥购买](developers/code-examples/v2/buy-with-api-key.md)
-  * [v2 — 使用私钥延长](developers/code-examples/v2/extend-with-private-key.md)
-  * [v2 — 使用 API 密钥延长](developers/code-examples/v2/extend-with-api-key.md)
-  * [v0 — 使用私钥购买](developers/code-examples/v0/buy-with-private-key.md)
-  * [v0 — 使用 API 密钥购买](developers/code-examples/v0/buy-with-api-key.md)
-  * [v0 — 使用 API 密钥延长](developers/code-examples/v0/extend-with-api-key.md)
+  * [v2 — 使用私钥购买](developers/code-examples/buy-with-private-key.md)
+  * [v2 — 使用 API 密钥购买](developers/code-examples/buy-with-api-key.md)
+  * [v2 — 使用私钥延长](developers/code-examples/extend-with-private-key.md)
+  * [v2 — 使用 API 密钥延长](developers/code-examples/extend-with-api-key.md)
+  * [v0 — 使用私钥购买](developers/code-examples/buy-with-private-key-1.md)
+  * [v0 — 使用 API 密钥购买](developers/code-examples/buy-with-api-key-1.md)
+  * [v0 — 使用 API 密钥延长](developers/code-examples/extend-with-api-key-1.md)
 * [旧版 API (v0)](developers/legacy-api-v0/README.md)
-  * [购买 — 签名交易](developers/legacy-api-v0/buy/signed-tx.md)
-  * [购买 — API 密钥](developers/legacy-api-v0/buy/api-key.md)
+  * [购买 — 签名交易](developers/legacy-api-v0/signed-tx.md)
+  * [购买 — API 密钥](developers/legacy-api-v0/api-key.md)
   * [延长](developers/legacy-api-v0/extend.md)
 * [更新日志](developers/changelog.md)
 
-## 使用指南
+## GUIDES
 
 * [购买能量与带宽](guides/buy/README.md)
   * [在网站上](guides/buy/on-the-website/README.md)
@@ -105,7 +104,7 @@
   * [注册](guides/partner-bot-agency/register.md)
   * [机器人管理](guides/partner-bot-agency/bot-management.md)
 
-## 资源
+## RESOURCES
 
 * [常见问题](resources/faq.md)
 * [故障排查](resources/troubleshooting.md)
