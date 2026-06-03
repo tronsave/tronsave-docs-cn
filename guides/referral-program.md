@@ -10,7 +10,7 @@ description: 您推荐到 TronSave 的用户每下一笔购买订单，您都能
 
 ## 设置您的推荐链接
 
-**第 1 步 — 连接您的钱包。** 打开 [tronsave.io](https://tronsave.io) 并连接您的 TRON 钱包（例如 TronLink）。
+**第 1 步 — 连接您的钱包。** 打开 [tronsave.io](https://tronsave.io/market) 并连接您的 TRON 钱包（例如 TronLink）。
 
 **第 2 步 — 点击 "Referral"（推荐）按钮。**
 
@@ -46,5 +46,5 @@ description: 您推荐到 TronSave 的用户每下一笔购买订单，您都能
 
 ## 后续步骤
 
-* [购买能量与带宽](buy/README.md) — 您的被推荐人将进行的操作。
+* [购买能量与带宽](buy/) — 您的被推荐人将进行的操作。
 * [定价与 APY](../concepts/pricing-and-apy.md) — 订单价值的确定方式。
