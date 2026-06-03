@@ -52,6 +52,7 @@
     * [取消订单](developers/api-reference/fast-charge/cancel-order.md)
     * [获取历史](developers/api-reference/fast-charge/get-history.md)
   * [MCP 服务器](developers/api-reference/mcp.md)
+* [SDK](developers/sdk.md)
 * [代码示例](developers/code-examples/README.md)
   * [v2 — 使用私钥购买](developers/code-examples/v2/buy-with-private-key.md)
   * [v2 — 使用 API 密钥购买](developers/code-examples/v2/buy-with-api-key.md)
