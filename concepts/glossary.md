@@ -25,7 +25,7 @@ description: TronSave 文档中通用的标准化术语。
 | **`requester`** | 下单/代表订单的地址（你内部账户的 `representAddress`）。 |
 | **`fulfilledPercent`** | 订单成交状态：`0` 待处理，`1–99` 部分成交，`100` 完全成交。 |
 | **APR / APY** | 供应商收益。公式参见 [定价与 APY](pricing-and-apy.md)。 |
-| **WTRX** | Wrapped TRX（包装 TRX），用于某些 [SDK](../developers/sdk/wtrx.md) 付款流程。 |
+| **WTRX** | Wrapped TRX（包装 TRX），用于某些 SDK 付款流程。 |
 | **ZapBuy** | 通过直接向机器人地址发送 TRX 来购买能量；固定 1 小时租赁。 |
 | **Fast Charge** | 用于快速能量充值的 API 流程（预估 → 创建 → 跟踪 → 确认）。 |
 | **Nile** | TronSave 使用的 TRON 测试网（`api-dev.tronsave.io`）。 |
