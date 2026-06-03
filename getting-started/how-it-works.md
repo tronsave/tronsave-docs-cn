@@ -40,7 +40,7 @@ Buyer ──places order──▶  TronSave order book  ◀──supplies resour
 
 * **网站** —— [tronsave.io](https://tronsave.io)(完整 UI、所有订单类型和工具)
 * **Telegram** —— [TronSave 机器人](../guides/buy/on-telegram/README.md)
-* **API / SDK** —— [REST API](../developers/api-reference/README.md) 和 TypeScript SDK
+* **API / SDK** —— [REST API](../developers/api-reference/README.md) 和 [SDK](../developers/sdk.md)(TypeScript、Rust、Python、Java 和 PHP)
 
 ## 后续步骤
 

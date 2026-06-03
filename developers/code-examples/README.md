@@ -54,4 +54,4 @@ npm i tronweb@5.3.2 @noble/secp256k1@1.7.1
 
 * [快速开始](../quickstart.md) — 通往你第一笔订单的最短路径。
 * [API 参考](../api-reference/README.md) — 这些示例调用的每个端点。
-* SDK — 如果你不想直接调用 HTTP API，这是一个带类型的 TypeScript 封装。
+* [SDK](../sdk.md)（TypeScript、Rust、Python、Java 和 PHP）— 如果你不想直接调用 HTTP API，这是一个带类型的封装。
