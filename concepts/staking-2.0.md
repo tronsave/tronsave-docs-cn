@@ -1,0 +1,34 @@
+---
+description: TRON 质押 2.0 如何产生能量——TronSave 供应的基础。
+---
+
+# 质押 2.0
+
+TronSave 构建于 TRON 的 **质押 2.0** 模型之上。质押(冻结)TRX 会产生**能量**(或带宽),供应商随后在市场上将其出租。
+
+## 质押如何产生能量
+
+当你质押 TRX 以获取能量时,你获得的能量数量取决于你在全网为能量质押的所有 TRX 中所占的份额:
+
+```
+Energy obtained = (Your TRX staked for Energy / Total TRX staked for Energy on TRON) × 180,000,000,000
+```
+
+因此,随着全网为能量质押的 TRX 增多,每个 TRX 产出的能量会**减少**;质押减少时则会增加。
+
+## 解质押周期
+
+{% hint style="warning" %}
+已质押的 TRX 需要 **14 天** 的解质押(解冻)周期后才能提取。
+{% endhint %}
+
+如果你需要更快获得流动性,请参阅 [提前解质押](../guides/unstake/README.md),它允许你在 14 天之前通过解质押市场退出你的仓位。
+
+## 为何这对 TronSave 很重要
+
+* **供应商** 质押 TRX → 获得能量 → 在 TronSave 上[出售/代理(委托)](../guides/sell/README.md) → 赚取 [APY](pricing-and-apy.md)。
+* **买家** 从中受益,因为正是这部分质押供应以市场价格(而非销毁费率)填充他们的租赁订单。
+
+## 后续步骤
+
+* [出售 / 供应商指南](../guides/sell/README.md) · [权限](../guides/sell/permission.md) · [定价与 APY](pricing-and-apy.md) · [提前解质押](../guides/unstake/README.md)
