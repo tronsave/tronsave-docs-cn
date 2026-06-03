@@ -1,4 +1,6 @@
-# 目录
+# Table of contents
+
+* [README](README.md)
 
 ## 快速开始
 
