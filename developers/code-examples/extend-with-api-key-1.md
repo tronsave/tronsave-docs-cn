@@ -2,20 +2,20 @@
 description: 完整的 v0 示例，展示如何使用 API 密钥延长资源订单。
 ---
 
-# 使用 API 密钥延长订单
+# v0 — 使用 API 密钥延长
 
 这是一个完整的 v0 示例，使用 TronSave **API 密钥**延长一个有效的资源代理（委托）。它通过 `get-extendable-delegates` 预估成本，然后通过 `internal-extend-request` 提交延长请求。
 
 {% hint style="warning" %}
-这是一个旧版 v0 示例，仅作参考保留。对于新的集成，请使用当前的 API。参见 [延长订单](../../api-reference/extend-orders/README.md) 和 [快速开始](../../quickstart.md)。
+这是一个旧版 v0 示例，仅作参考保留。对于新的集成，请使用当前的 API。参见 [延长订单](../api-reference/extend-orders/) 和 [快速开始](../quickstart.md)。
 {% endhint %}
 
 ## 前提条件
 
 你需要一个 API 密钥。有两种获取方式：
 
-* [在网站上获取 API 密钥](../../authentication.md)
-* [在 Telegram 上获取 API 密钥](../../authentication.md)
+* [在网站上获取 API 密钥](../authentication.md)
+* [在 Telegram 上获取 API 密钥](../authentication.md)
 
 **要求：TronWeb 版本 5.3.2**
 
@@ -131,5 +131,5 @@ ClientCode()
 
 ## 后续步骤
 
-* [延长订单 API 参考](../../api-reference/extend-orders/README.md)
-* [身份验证](../../authentication.md)
+* [延长订单 API 参考](../api-reference/extend-orders/)
+* [身份验证](../authentication.md)

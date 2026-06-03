@@ -9,7 +9,7 @@ description: 租赁价格如何设定，以及供应商 APY 如何计算。
 租赁价格按每个订单通过 `unitPrice`（每资源单位的 SUN）设定 —— 既可以是固定数值，也可以是某个档位（`SLOW` / `MEDIUM` / `FAST`）。市场的实时订单簿决定某个档位最终对应的价格。关于具体的档位规则，请参阅 [租赁模型](rental-model.md#the-price-tiers)。
 
 * **1 TRX = 1,000,000 SUN。**
-* 下单前请始终先进行[预估](../developers/api-reference/buy-resources/estimate-trx.md)，以查看当前价格和可用供应量。
+* 下单前请始终先进行[预估](/broken/pages/sgNfEWCRfinn74vpkq9A)，以查看当前价格和可用供应量。
 
 ## 供应商 APY 如何计算
 
@@ -19,12 +19,7 @@ $$
 APR_{tronsave} = \frac{AP \times FR}{1{,}000{,}000} \times PS \times 365
 $$
 
-| 符号 | 含义 |
-| --- | --- |
-| **AP** | 最接近的 200 笔已匹配订单的平均价格（SUN） |
-| **FR** | TRON 网络上的冻结率（每质押 1 TRX 对应的 SUN）—— 可在 [tronstation.io](https://tronstation.io/calculator) 查询 |
-| **PS** | 供应商在 TronSave 上的利润分成 = **0.75** |
-| 1,000,000 | 每 TRX 对应的 SUN |
+<table><thead><tr><th width="230">符号</th><th>含义</th></tr></thead><tbody><tr><td><strong>AP</strong></td><td>最接近的 200 笔已匹配订单的平均价格（SUN）</td></tr><tr><td><strong>FR</strong></td><td>TRON 网络上的冻结率（每质押 1 TRX 对应的 SUN）</td></tr><tr><td><strong>PS</strong></td><td>供应商在 TronSave 上的利润分成 = <strong>0.75</strong></td></tr><tr><td>1,000,000</td><td>每 TRX 对应的 SUN</td></tr></tbody></table>
 
 $$
 APY_{total} = \left(1 + \frac{APR_{tronsave}}{12}\right)^{12} - 1 + VR
@@ -50,4 +45,4 @@ AP、FR 和 VR 都会随市场状况变动，因此实时 APY 会有所不同。
 
 ## 后续步骤
 
-* [质押 2.0](staking-2.0.md) · [出售 / 供应商](../guides/sell/README.md) · [计算 APY（常见问题）](../resources/faq.md)
+* [质押 2.0](staking-2.0.md) · [出售 / 供应商](../guides/sell/) · [计算 APY（常见问题）](../resources/faq.md)

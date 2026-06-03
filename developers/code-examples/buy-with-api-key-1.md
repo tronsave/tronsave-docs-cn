@@ -2,17 +2,17 @@
 description: 完整的 v0 示例——使用 API 密钥购买能量，涵盖从检查订单簿到轮询履约的全过程，提供 JavaScript、Java、Ruby 和 PHP 版本。
 ---
 
-# 使用 API 密钥购买能量 (v0)
+# v0 — 使用 API 密钥购买
 
 {% hint style="warning" %}
-**旧版示例。** 本页记录的是 `v0` API 端点。新的集成应使用 [身份验证](../../authentication.md) 和 [API 参考](../../api-reference/buy-resources/api-key/README.md) 中描述的当前 API 密钥端点。下方的 `v0` 代码仅为现有集成而保留。
+**旧版示例。** 本页记录的是 `v0` API 端点。新的集成应使用 [身份验证](../authentication.md) 和 [API 参考](../api-reference/buy-resources/api-key/) 中描述的当前 API 密钥端点。下方的 `v0` 代码仅为现有集成而保留。
 {% endhint %}
 
-这是一个完整、可运行的示例，演示如何通过 API 密钥购买能量。它会检查 [订单簿](../../api-reference/buy-resources/api-key/get-order-book.md)，验证你的内部账户余额，创建订单，然后轮询该订单直到其履约完成。
+这是一个完整、可运行的示例，演示如何通过 API 密钥购买能量。它会检查 [订单簿](../api-reference/buy-resources/api-key/get-order-book.md)，验证你的内部账户余额，创建订单，然后轮询该订单直到其履约完成。
 
 ## 获取 API 密钥
 
-在运行此示例之前，你需要一个与 TronSave 内部账户绑定的 API 密钥。请参阅 [身份验证](../../authentication.md) 了解生成 API 密钥的两种方式（在网站上或通过 Telegram）。
+在运行此示例之前，你需要一个与 TronSave 内部账户绑定的 API 密钥。请参阅 [身份验证](../authentication.md) 了解生成 API 密钥的两种方式（在网站上或通过 Telegram）。
 
 ## 前置要求
 
@@ -30,19 +30,14 @@ npm i tronweb@5.3.2 @noble/secp256k1@1.7.1
 
 替换每个文件顶部的占位常量：
 
-<table>
-<thead>
-<tr><th>常量</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>API_KEY</code></td><td>你的 TronSave API 密钥。</td></tr>
-<tr><td><code>TRONSAVE_API_URL</code></td><td>主网使用 <code>https://api.tronsave.io</code>，测试网使用 <code>https://api-dev.tronsave.io</code>。</td></tr>
-<tr><td><code>RECEIVER_ADDRESS</code></td><td>将接收能量的接收地址。</td></tr>
-<tr><td><code>BUY_AMOUNT</code></td><td>要购买的能量数量。</td></tr>
-<tr><td><code>DURATION</code></td><td>订单时长（以毫秒为单位）。示例中的默认值：<code>3600 * 1000</code>（1 小时）。</td></tr>
-<tr><td><code>MAX_PRICE_ACCEPTED</code></td><td>你愿意支付的最高价格（以每单位能量的 SUN 计）。</td></tr>
-</tbody>
-</table>
+| 常量                   | 说明                                                                  |
+| -------------------- | ------------------------------------------------------------------- |
+| `API_KEY`            | 你的 TronSave API 密钥。                                                 |
+| `TRONSAVE_API_URL`   | 主网使用 `https://api.tronsave.io`，测试网使用 `https://api-dev.tronsave.io`。 |
+| `RECEIVER_ADDRESS`   | 将接收能量的接收地址。                                                         |
+| `BUY_AMOUNT`         | 要购买的能量数量。                                                           |
+| `DURATION`           | 订单时长（以毫秒为单位）。示例中的默认值：`3600 * 1000`（1 小时）。                           |
+| `MAX_PRICE_ACCEPTED` | 你愿意支付的最高价格（以每单位能量的 SUN 计）。                                          |
 
 ## 完整示例
 
@@ -732,6 +727,6 @@ create_order_by_using_api_key();
 
 ## 后续步骤
 
-* [身份验证](../../authentication.md)——生成 API 密钥并为你的内部账户充值。
-* [使用 API 密钥购买资源](../../api-reference/buy-resources/api-key/README.md)——当前（非 `v0`）的 API 密钥端点。
-* [订单类型](../../../concepts/order-types.md)——了解价格档位、部分履约和订单时长。
+* [身份验证](../authentication.md)——生成 API 密钥并为你的内部账户充值。
+* [使用 API 密钥购买资源](../api-reference/buy-resources/api-key/)——当前（非 `v0`）的 API 密钥端点。
+* [订单类型](../../concepts/order-types.md)——了解价格档位、部分履约和订单时长。

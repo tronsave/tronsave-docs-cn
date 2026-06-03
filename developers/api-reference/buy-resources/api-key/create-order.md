@@ -2,7 +2,7 @@
 description: 使用 API 密钥创建能量或带宽购买订单，从你的 TronSave 内部账户付款，并获得用于追踪订单状态的 orderId。
 ---
 
-# 购买能量（创建订单）
+# 创建订单
 
 使用 API 密钥创建能量或带宽购买订单。订单从你预先充值的[内部账户](../../../authentication.md)中付款，因此无需对每笔订单进行链上签名。成功时，该接口会返回一个 `orderId`，你可以用它来追踪订单状态。
 
@@ -14,40 +14,15 @@ description: 使用 API 密钥创建能量或带宽购买订单，从你的 Tron
 
 ## 请求头
 
-<table>
-<thead>
-<tr><th width="140">名称</th><th width="110">类型</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>apikey</code><mark style="color:red;">*</mark></td><td>String</td><td>与你的内部账户绑定的 TronSave API 密钥。请参阅<a href="../../../authentication.md">身份验证</a>以获取你的 API 密钥。</td></tr>
-</tbody>
-</table>
+<table><thead><tr><th width="140">名称</th><th width="110">类型</th><th>说明</th></tr></thead><tbody><tr><td><code>apikey</code><mark style="color:red;">*</mark></td><td>String</td><td>与你的内部账户绑定的 TronSave API 密钥。请参阅<a href="../../../authentication.md">身份验证</a>以获取你的 API 密钥。</td></tr></tbody></table>
 
-<sub>* 必填。</sub>
+<mark style="color:red;">\*</mark> <sub>必填。</sub>
 
 ## 请求体
 
-<table>
-<thead>
-<tr><th width="290">字段</th><th width="140">类型</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>ENERGY</code>。</td></tr>
-<tr><td><code>unitPrice</code></td><td>Number, String</td><td><p><code>"FAST"</code>、<code>"MEDIUM"</code>、<code>"SLOW"</code> 或一个数字。<strong>默认值：<code>"MEDIUM"</code></strong>。</p><p><br>- <strong>FAST</strong>：如果市场可成交量 = 100%，则 FAST = MEDIUM。如果市场可成交量 &#x3C; 100%，则 FAST = MEDIUM + 10。如果市场可成交量 = 0%，则 FAST = SLOW + 20。</p><p>- <strong>MEDIUM</strong>：使该订单获得最大市场成交量的最低价格。如果市场可成交量 = 0%，则 MEDIUM = SLOW + 10。</p><p>- <strong>SLOW</strong>：该订单可设置的最低价格。</p><p>- 如果价格为数字，则价格单位为 SUN。</p></td></tr>
-<tr><td><code>resourceAmount</code><mark style="color:red;">*</mark></td><td>Number</td><td>资源数量。</td></tr>
-<tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>资源接收地址。</td></tr>
-<tr><td><code>durationSec</code></td><td>Number</td><td>所购资源的时长，单位为秒。<strong>默认值：</strong>259200（3 天）。</td></tr>
-<tr><td><code>sponsor</code></td><td>String</td><td>赞助码。</td></tr>
-<tr><td><code>options</code></td><td>Object</td><td>可选。</td></tr>
-<tr><td><code>options.allowPartialFill</code></td><td>Boolean</td><td>是否允许订单被部分成交。</td></tr>
-<tr><td><code>options.onlyCreateWhenFulfilled</code></td><td>Boolean</td><td><p><code>true</code> => 仅当订单可被完全成交时才创建。</p><p><code>false</code> => 即使订单无法被成交也会创建。</p><p>默认值：<code>false</code>。</p></td></tr>
-<tr><td><code>options.maxPriceAccepted</code></td><td>Number</td><td>仅当预估价格低于该值时才创建订单。</td></tr>
-<tr><td><code>options.preventDuplicateIncompleteOrders</code></td><td>Boolean</td><td><p><code>true</code> => 仅当不存在具有相同参数的<strong>未完成订单</strong>时才创建。</p><p><code>false</code> => 始终创建新订单，无论是否存在未完成的订单。</p><p>默认值：<strong><code>false</code></strong>。</p></td></tr>
-<tr><td><code>options.minResourceDelegateRequiredAmount</code></td><td>Number</td><td>单个供应商代理（委托）的最小资源数量。</td></tr>
-</tbody>
-</table>
+<table><thead><tr><th width="290">字段</th><th width="140">类型</th><th>说明</th></tr></thead><tbody><tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>ENERGY</code>。</td></tr><tr><td><code>unitPrice</code></td><td>Number, String</td><td><p><code>"FAST"</code>、<code>"MEDIUM"</code>、<code>"SLOW"</code> 或一个数字。<strong>默认值：<code>"MEDIUM"</code></strong>。</p><p><br>- <strong>FAST</strong>：如果市场可成交量 = 100%，则 FAST = MEDIUM。如果市场可成交量 &#x3C; 100%，则 FAST = MEDIUM + 10。如果市场可成交量 = 0%，则 FAST = SLOW + 20。</p><p>- <strong>MEDIUM</strong>：使该订单获得最大市场成交量的最低价格。如果市场可成交量 = 0%，则 MEDIUM = SLOW + 10。</p><p>- <strong>SLOW</strong>：该订单可设置的最低价格。</p><p>- 如果价格为数字，则价格单位为 SUN。</p></td></tr><tr><td><code>resourceAmount</code><mark style="color:red;">*</mark></td><td>Number</td><td>资源数量。</td></tr><tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>资源接收地址。</td></tr><tr><td><code>durationSec</code></td><td>Number</td><td>所购资源的时长，单位为秒。<strong>默认值：</strong>259200（3 天）。</td></tr><tr><td><code>sponsor</code></td><td>String</td><td>赞助码。</td></tr><tr><td><code>options</code></td><td>Object</td><td>可选。</td></tr><tr><td><code>options.allowPartialFill</code></td><td>Boolean</td><td>是否允许订单被部分成交。</td></tr><tr><td><code>options.onlyCreateWhenFulfilled</code></td><td>Boolean</td><td><p><code>true</code> => 仅当订单可被完全成交时才创建。</p><p><code>false</code> => 即使订单无法被成交也会创建。</p><p>默认值：<code>false</code>。</p></td></tr><tr><td><code>options.maxPriceAccepted</code></td><td>Number</td><td>仅当预估价格低于该值时才创建订单。</td></tr><tr><td><code>options.preventDuplicateIncompleteOrders</code></td><td>Boolean</td><td><p><code>true</code> => 仅当不存在具有相同参数的<strong>未完成订单</strong>时才创建。</p><p><code>false</code> => 始终创建新订单，无论是否存在未完成的订单。</p><p>默认值：<strong><code>false</code></strong>。</p></td></tr><tr><td><code>options.minResourceDelegateRequiredAmount</code></td><td>Number</td><td>单个供应商代理（委托）的最小资源数量。</td></tr></tbody></table>
 
-<sub>* 必填。</sub>
+<mark style="color:red;">\*</mark> <sub>必填。</sub>
 
 ### 请求体示例
 

@@ -2,7 +2,7 @@
 description: 通过 TronSave v2 API 使用钱包私钥对支付交易进行签名，购买能量或带宽的完整可运行示例。
 ---
 
-# 通过 API 使用私钥购买资源
+# v2 — 使用私钥购买
 
 这是 **签名交易** 购买流程的完整可运行示例：预估成本、使用钱包私钥构建并签名一笔 TRX 支付交易，然后提交以创建订单。无需预付 TronSave 余额，你可以直接从钱包按订单付款。
 
@@ -30,9 +30,13 @@ npm i tronweb@5.3.2 @noble/secp256k1@1.7.1
 
 示例默认使用主网值。若要在 Nile（测试网）上运行，请替换下方内联标注的值：
 
-<table><thead><tr><th>常量</th><th>主网</th><th>Nile 测试网</th></tr></thead><tbody><tr><td><code>TRONSAVE_RECEIVER_ADDRESS</code></td><td><code>TWZEhq5JuUVvGtutNgnRBATbF8BnHGyn4S</code></td><td><code>TATT1UzHRikft98bRFqApFTsaSw73ycfoS</code></td></tr><tr><td><code>TRON_FULL_NODE</code></td><td><code>https://api.trongrid.io</code></td><td><code>https://api.nileex.io</code></td></tr><tr><td><code>TRONSAVE_API_URL</code></td><td><code>https://api.tronsave.io</code></td><td><code>https://api-dev.tronsave.io</code></td></tr></tbody></table>
+| 常量                          | 主网                                   | Nile 测试网                             |
+| --------------------------- | ------------------------------------ | ------------------------------------ |
+| `TRONSAVE_RECEIVER_ADDRESS` | `TWZEhq5JuUVvGtutNgnRBATbF8BnHGyn4S` | `TATT1UzHRikft98bRFqApFTsaSw73ycfoS` |
+| `TRON_FULL_NODE`            | `https://api.trongrid.io`            | `https://api.nileex.io`              |
+| `TRONSAVE_API_URL`          | `https://api.tronsave.io`            | `https://api-dev.tronsave.io`        |
 
-有关切换网络的更多信息，请参阅 [环境](../../environments.md)。
+有关切换网络的更多信息，请参阅 [环境](../environments.md)。
 
 ## 完整示例
 
@@ -289,7 +293,7 @@ if __name__ == "__main__":
 ```
 
 {% hint style="info" %}
-上面的 `get_signed_transaction` 辅助函数只是一个占位符。要在 Python 中真正对 TRX 支付进行签名，请使用诸如 [`tronpy`](https://github.com/andelf/tronpy) 这样的 TRON 库构建并签名一个 `TransferContract`，或调用 TronSave 的 [获取签名交易](../../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API。
+上面的 `get_signed_transaction` 辅助函数只是一个占位符。要在 Python 中真正对 TRX 支付进行签名，请使用诸如 [`tronpy`](https://github.com/andelf/tronpy) 这样的 TRON 库构建并签名一个 `TransferContract`，或调用 TronSave 的 [获取签名交易](../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API。
 {% endhint %}
 {% endtab %}
 
@@ -415,7 +419,7 @@ buyResourceUsingPrivateKey();
 ```
 
 {% hint style="info" %}
-上面的 `getSignedTransaction` 辅助函数只是一个占位符。要真正对 TRX 支付进行签名，请使用 TRON PHP SDK 构建并签名一个 `TransferContract`，或调用 TronSave 的 [获取签名交易](../../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API。
+上面的 `getSignedTransaction` 辅助函数只是一个占位符。要真正对 TRX 支付进行签名，请使用 TRON PHP SDK 构建并签名一个 `TransferContract`，或调用 TronSave 的 [获取签名交易](../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API。
 {% endhint %}
 {% endtab %}
 
@@ -706,25 +710,25 @@ async fn main() -> Result<(), reqwest::Error> {
 {% endtabs %}
 
 {% hint style="info" %}
-只有 JavaScript 示例完整地实现了交易签名（通过 TronWeb）。对于其他语言，签名步骤被留作占位实现 — 请使用对应语言的 TRON SDK 构建并签名一笔发送至 TronSave 接收地址的 `TransferContract`（`sendTrx`），或调用 TronSave 的 [获取签名交易](../../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API，并将其结果作为 `signedTx` 传入。
+只有 JavaScript 示例完整地实现了交易签名（通过 TronWeb）。对于其他语言，签名步骤被留作占位实现 — 请使用对应语言的 TRON SDK 构建并签名一笔发送至 TronSave 接收地址的 `TransferContract`（`sendTrx`），或调用 TronSave 的 [获取签名交易](../api-reference/buy-resources/signed-tx/get-signed-transaction.md) API，并将其结果作为 `signedTx` 传入。
 {% endhint %}
 
 ## 工作原理
 
-| 步骤 | 端点 | 用途 |
-| --- | --- | --- |
-| 1 | `POST /v2/estimate-buy-resource` | 返回 `unitPrice`、`estimateTrx`、`durationSec` 和 `availableResource`。 |
-| 2 | （钱包 / SDK） | 签名一笔发送至 `TRONSAVE_RECEIVER_ADDRESS`、金额为 `estimateTrx` SUN 的 `sendTrx` 交易。 |
-| 3 | `POST /v2/buy-resource` | 提交 `signedTx` 并创建订单；返回一个 `orderId`。 |
+| 步骤 | 端点                               | 用途                                                                        |
+| -- | -------------------------------- | ------------------------------------------------------------------------- |
+| 1  | `POST /v2/estimate-buy-resource` | 返回 `unitPrice`、`estimateTrx`、`durationSec` 和 `availableResource`。         |
+| 2  | （钱包 / SDK）                       | 签名一笔发送至 `TRONSAVE_RECEIVER_ADDRESS`、金额为 `estimateTrx` SUN 的 `sendTrx` 交易。 |
+| 3  | `POST /v2/buy-resource`          | 提交 `signedTx` 并创建订单；返回一个 `orderId`。                                       |
 
 示例中的几点说明：
 
 * 预估请求中的 `unitPrice: "MEDIUM"` 用于选择一个档位；预估响应会返回你传递给 `/v2/buy-resource` 的具体数值 `unitPrice`。
-* `availableResource >= BUY_AMOUNT` 表示订单可被完全成交。当设置 `allowPartialFill: true` 时，即使可用资源较少，订单仍可被创建。 <!-- [NEEDS CONFIRMATION: exact partial-fill behavior when availableResource < BUY_AMOUNT] -->
+* `availableResource >= BUY_AMOUNT` 表示订单可被完全成交。当设置 `allowPartialFill: true` 时，即使可用资源较少，订单仍可被创建。
 * `estimateTrx` 以 SUN 计价（1 TRX = 1,000,000 SUN），即你在支付交易中签名的金额。
 
 ## 后续步骤
 
-* [使用签名交易购买（API 参考）](../../api-reference/buy-resources/signed-tx/README.md)
-* [预估 TRX](../../api-reference/buy-resources/signed-tx/estimate-trx.md) · [获取签名交易](../../api-reference/buy-resources/signed-tx/get-signed-transaction.md) · [创建订单](../../api-reference/buy-resources/signed-tx/create-order.md)
-* [环境](../../environments.md) · [订单类型](../../../concepts/order-types.md)
+* [使用签名交易购买（API 参考）](../api-reference/buy-resources/signed-tx/)
+* [预估 TRX](../api-reference/buy-resources/signed-tx/estimate-trx.md) · [获取签名交易](../api-reference/buy-resources/signed-tx/get-signed-transaction.md) · [创建订单](../api-reference/buy-resources/signed-tx/create-order.md)
+* [环境](../environments.md) · [订单类型](../../concepts/order-types.md)

@@ -7,7 +7,7 @@ description: 管理您访问和使用 TronSave 平台及服务的条款。
 **TronSave** 提供一个用于买卖 TRON 能量的在线平台。访问或使用我们的网站和服务，即表示您（"用户"、"您"或"您的"）同意受以下服务条款的约束。如果您不同意这些条款，请勿使用我们的网站或服务。
 
 {% hint style="warning" %}
-TronSave 服务**不在美国或越南提供**。如果您位于这些地区，将无法使用本平台。请参阅下文的[服务可用性](#service-availability)。
+TronSave 服务**不在美国或越南提供**。如果您位于这些地区，将无法使用本平台。请参阅下文的[服务可用性](terms-of-service.md#id-8.-fu-wu-ke-yong-xing)。
 {% endhint %}
 
 ## 1. 资格

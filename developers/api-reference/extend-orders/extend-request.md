@@ -2,7 +2,7 @@
 description: 为现有的 TronSave 订单提交续期请求——使用你的 API 密钥（内部账户）或签名交易进行支付——并获取 orderId。
 ---
 
-# 提交续期请求
+# 延长请求
 
 为你在 [步骤 1：获取可续期的代理](get-extendable-delegates.md) 中选择的代理（委托）进行续期。支持两种支付方式：
 
@@ -21,31 +21,15 @@ description: 为现有的 TronSave 订单提交续期请求——使用你的 AP
 
 ### 请求头
 
-<table>
-<thead>
-<tr><th width="140">名称</th><th width="110">类型</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>apikey</code><mark style="color:red;">*</mark></td><td>String</td><td>与你的内部账户绑定的 TronSave API 密钥。请参阅 <a href="../../authentication.md">身份验证</a> 以获取你的 API 密钥。</td></tr>
-</tbody>
-</table>
+<table><thead><tr><th width="140">名称</th><th width="110">类型</th><th>说明</th></tr></thead><tbody><tr><td><code>apikey</code><mark style="color:red;">*</mark></td><td>String</td><td>与你的内部账户绑定的 TronSave API 密钥。请参阅 <a href="../../authentication.md">身份验证</a> 以获取你的 API 密钥。</td></tr></tbody></table>
 
-<sub>* 必填。</sub>
+<mark style="color:red;">\*</mark><sub>必填。</sub>
 
 ### 请求体
 
-<table>
-<thead>
-<tr><th width="150">字段</th><th width="120">类型</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>接收资源的接收地址。</td></tr>
-<tr><td><code>extendData</code><mark style="color:red;">*</mark></td><td>Array</td><td>续期数据数组。使用预估 API 的响应——请参阅 <a href="step-1-get-extendable-delegates.md">获取可续期的代理</a>。</td></tr>
-<tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>"ENERGY"</code>。</td></tr>
-</tbody>
-</table>
+<table><thead><tr><th width="150">字段</th><th width="120">类型</th><th>说明</th></tr></thead><tbody><tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>接收资源的接收地址。</td></tr><tr><td><code>extendData</code><mark style="color:red;">*</mark></td><td>Array</td><td>续期数据数组。使用预估 API 的响应——请参阅 <a href="step-1-get-extendable-delegates.md">获取可续期的代理</a>。</td></tr><tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>"ENERGY"</code>。</td></tr></tbody></table>
 
-<sub>* 必填。</sub>
+<mark style="color:red;">\*</mark> <sub>必填。</sub>
 
 ### 请求体示例
 
@@ -333,19 +317,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ### 请求体
 
-<table>
-<thead>
-<tr><th width="150">字段</th><th width="170">类型</th><th>说明</th></tr>
-</thead>
-<tbody>
-<tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>接收资源的接收地址。</td></tr>
-<tr><td><code>extendData</code><mark style="color:red;">*</mark></td><td>Array</td><td>续期数据数组。使用预估 API 的响应——请参阅 <a href="step-1-get-extendable-delegates.md">获取可续期的代理</a>。</td></tr>
-<tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>"ENERGY"</code>。</td></tr>
-<tr><td><code>signedTx</code></td><td>SignedTransaction</td><td>签名交易，以 JSON 对象形式提供（来自 <a href="../buy-resources/signed-tx/get-signed-transaction.md">获取签名交易</a> 的 <code>signedTx</code>）。</td></tr>
-</tbody>
-</table>
+<table><thead><tr><th width="150">字段</th><th width="170">类型</th><th>说明</th></tr></thead><tbody><tr><td><code>receiver</code><mark style="color:red;">*</mark></td><td>String</td><td>接收资源的接收地址。</td></tr><tr><td><code>extendData</code><mark style="color:red;">*</mark></td><td>Array</td><td>续期数据数组。使用预估 API 的响应——请参阅 <a href="step-1-get-extendable-delegates.md">获取可续期的代理</a>。</td></tr><tr><td><code>resourceType</code></td><td>String</td><td><code>"ENERGY"</code> 或 <code>"BANDWIDTH"</code>。默认值：<code>"ENERGY"</code>。</td></tr><tr><td><code>signedTx</code></td><td>SignedTransaction</td><td>签名交易，以 JSON 对象形式提供（来自 <a href="../buy-resources/signed-tx/get-signed-transaction.md">获取签名交易</a> 的 <code>signedTx</code>）。</td></tr></tbody></table>
 
-<sub>* 必填。</sub>
+<sub>\* 必填。</sub>
 
 {% hint style="info" %}
 * 要创建签名交易，请参阅 [获取签名交易](../buy-resources/signed-tx/get-signed-transaction.md)。
