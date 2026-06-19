@@ -14,7 +14,7 @@ description: 您推荐到 TronSave 的用户每下一笔购买订单，您都能
 
 **第 2 步 — 点击 "Referral"（推荐）按钮。**
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FW4sDk6ePRmWwpMBhzDjx%2Fimage.png?alt=media&#x26;token=82800202-f670-4876-8914-11bac0fd9219" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/referral-create-code.png" alt="Referral Create Code"><figcaption></figcaption></figure>
 
 **第 3 步 — 输入您的赞助码（Sponsor Code）** _（可选）_。
 
@@ -30,7 +30,7 @@ description: 您推荐到 TronSave 的用户每下一笔购买订单，您都能
 
 ## 追踪奖励与统计数据
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FGhDL15vKbtZlFYpzvU6e%2Fimage.png?alt=media&#x26;token=65889ec9-81c4-473b-84c5-a9fac9770269" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/buyer-referrals.png" alt="Buyer Referrals"><figcaption></figcaption></figure>
 
 1. 点击 **Copy**（复制）图标以复制您的推荐链接。
 2. 查看您推荐计划的统计数据。

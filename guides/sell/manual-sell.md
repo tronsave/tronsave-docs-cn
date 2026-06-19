@@ -31,7 +31,7 @@ _如果你已经拥有可用资源，请跳过此步骤。_
 
 浏览开放的买单，在你想成交的订单上点击 **Sell**。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2Funxb8cm0QpGuMy3DJ9Tw%2Fanh11.png?alt=media&#x26;token=65cc5102-529c-45cd-82ff-d451c2c81fac" alt=""><figcaption><p>点击 "Sell" 按钮</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/market-create-order.png" alt="点击 "Sell" 按钮"><figcaption><p>点击 "Sell" 按钮</p></figcaption></figure>
 
 ## 选项 1 —— 手动出售（普通）
 
@@ -39,7 +39,7 @@ _如果你已经拥有可用资源，请跳过此步骤。_
 
 输入你想代理（委托）以成交该订单的资源数量。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2F0mnXKQxksqO3T5iDYRdf%2Fimage.png?alt=media&#x26;token=229f588f-0532-4443-9296-c45dcf220606" alt="" width="503"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sell-fill-order.png" alt="Sell Fill Order"><figcaption></figcaption></figure>
 
 ### 可选 —— 设置收款（Setting payment）
 

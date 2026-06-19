@@ -33,7 +33,7 @@ description: 在网站上创建订单并用 TRX 付款，无需连接钱包。
 
 选择 **TOP UP DIRECTLY**（直接充值）选项（点击 **TOP UP** 按钮）。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2Fr9VJGfYFeISpPdb8Smdm%2Fimage.png?alt=media&#x26;token=e9ae523d-cf78-47eb-af22-900605581654" alt="" width="329"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pending-payment.png" alt="Pending Payment"><figcaption></figcaption></figure>
 
 系统将显示：
 
@@ -41,7 +41,7 @@ description: 在网站上创建订单并用 TRX 付款，无需连接钱包。
 * 所需的**准确 TRX 金额**
 * 一个**倒计时**（通常为 **3 分钟**）
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FsSXpDSLtDBvzaCROh8W6%2Fimage.png?alt=media&#x26;token=51c86d09-0293-4e6d-9c32-4b39d634604c" alt="" width="339"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pending-direct-transfer.png" alt="Pending Direct Transfer"><figcaption></figcaption></figure>
 
 _（上图为示例订单，请勿用于充值或真实交易。）_
 
