@@ -20,7 +20,7 @@ description: 在 TronSave 上注册提前解质押，无需等待官方解质押
 * 仔细阅读所有**条款**。
 * 在继续之前，勾选 "我已阅读并理解所有提前解 staked 的条款和条件" 复选框。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FI623FjNHjCwdcvyqZlPv%2Fimage.png?alt=media&#x26;token=958fb01e-aee3-46bc-9bd5-b331193987e3" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unstake-early.png" alt="Unstake Early"><figcaption></figcaption></figure>
 
 ### 步骤 3 – 计算可领取金额
 

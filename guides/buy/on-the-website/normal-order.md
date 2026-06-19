@@ -12,13 +12,13 @@ description: 在 tronsave.io 上下普通市价订单，租赁能量或带宽，
 2. 连接你的钱包（例如 TronLink）。
 3. 输入要购买的能量/带宽**数量**、**价格**和**时长**。你还可以选择设置自定义的资源目标地址。填写表单后，点击**创建订单**。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FRcFE4tiiS7589OFLKzcZ%2Fanh1.png?alt=media&#x26;token=503fb3a3-cfae-4f06-9503-0e03d9fbdb28" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/market-create-order.png" alt="Market Create Order"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 点击**价格**字段可打开**订单簿**弹窗。在这里你可以查看不同价位上可用的资源，并为你的租赁选择最合适的价格和数量。
 {% endhint %}
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FYl0YUHlWLHmO0MDREK8k%2Fimage.png?alt=media&#x26;token=1f499398-cb02-4ae0-b770-eacc2234c9ef" alt="" width="297"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/market-order-book.png" alt="Market Order Book"><figcaption></figcaption></figure>
 
 ## 高级设置
 
@@ -48,11 +48,11 @@ description: 在 tronsave.io 上下普通市价订单，租赁能量或带宽，
 </tbody>
 </table>
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FBNtyqTotN5nsABYxyJEt%2FScreen%20Shot%202025-04-02%20at%2009.55.34.png?alt=media&#x26;token=93ab1d9c-9c88-4bb1-9ffe-fca09af61b14" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/market-advanced-settings.png" alt="Market Advanced Settings"><figcaption></figcaption></figure>
 
 下单后，订单会出现在**订单（Orders）**标签页中。如果资源池中有足够的资源，订单会自动成交。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FZ6Y8vxSry068iMK8WqfV%2Fanh3.png?alt=media&#x26;token=930d216a-6ca3-42cb-81f2-946ba88d2a17" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/order-history.png" alt="Order History"><figcaption></figcaption></figure>
 
 ## 更新接收地址
 

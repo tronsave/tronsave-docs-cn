@@ -15,7 +15,7 @@ description: 在 TronSave 提前解质押市场购买解质押订单，提供提
 
 ### 第 2 步 — 选择订单
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FG6PyWl3kWmUEv5QSVoT4%2Fimage.png?alt=media&#x26;token=6b824b94-fcc3-4c7d-9877-f13b8226c6d8" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unstake-market.png" alt="Unstake Market"><figcaption></figcaption></figure>
 
 * 在 **List of Orders**（订单列表）部分浏览可用的订单。
 * 选择一个符合你偏好的订单。
@@ -23,7 +23,7 @@ description: 在 TronSave 提前解质押市场购买解质押订单，提供提
 
 ### 第 3 步 — 填写购买信息
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2Fgl6Qb2G3YCnhiZn8X4pw%2Fimage.png?alt=media&#x26;token=02b598f6-3f50-4892-92b4-1f0c168ba47d" alt="" width="560"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unstake-market-buy.png" alt="Unstake Market Buy"><figcaption></figcaption></figure>
 
 * 输入用于接收款项的 **Receiving Address**（接收地址）。你可以选择：
   * 输入自定义地址，或
@@ -44,7 +44,7 @@ description: 在 TronSave 提前解质押市场购买解质押订单，提供提
 
 资金将按照 **Payout Time**（付款时间）中显示的时间表发送到你的接收地址。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2Fd1DMvjuM4ZkbEX6b7BhG%2Fimage.png?alt=media&#x26;token=777653a7-bfeb-4f4c-b948-fa9fd4b8b7f9" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unstake-market-history.png" alt="Unstake Market History"><figcaption></figcaption></figure>
 
 ## Telegram 通知
 

@@ -25,11 +25,11 @@ description: 一次设置规则，让 TronSave 在目标地址的能量或带宽
 
 选择 **Add Auto Buy Energy Rule**（添加自动购买能量规则）按钮。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FlGwh06GEzehyNQ5Oeowh%2Fimage.png?alt=media&#x26;token=a98bcf88-e722-4900-8918-78d238d7a6d6" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/buyer-auto-buy-tab.png" alt="Buyer Auto Buy Tab"><figcaption></figcaption></figure>
 
 ### 第 4 步 — 检查你的内部余额
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2F9SKwhh1S8MU8zU5wS8OY%2Fimage.png?alt=media&#x26;token=16acad74-db84-41e3-a27f-55da16c657d6" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/buyer-internal-wallet.png" alt="Buyer Internal Wallet"><figcaption></figcaption></figure>
 
 自动购买从你的**内部账户余额**中扣款，而不是直接从你的钱包中扣款。要充值，请点击 **Recharge**（充值）并向显示的地址存入 TRX。
 
@@ -77,7 +77,7 @@ description: 一次设置规则，让 TronSave 在目标地址的能量或带宽
 
 规则创建后，你可以通过以下操作来管理它。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2F5CAntH2SEHmVYECFiWHC%2Fimage.png?alt=media&#x26;token=42525709-b53c-4a36-b5b6-9c9aa19f2325" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/buyer-auto-buy-rule.png" alt="Buyer Auto Buy Rule"><figcaption></figcaption></figure>
 
 | # | 操作 | 作用 |
 | --- | --- | --- |

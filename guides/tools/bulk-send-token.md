@@ -22,7 +22,7 @@ description: 使用 SaveSender 在一个批次中向多个接收地址发送 TRX
 
 前往 [tronsave.io](https://tronsave.io/)，打开 **Tools** 菜单，点击 [**Bulk Send Token**](https://tronsave.io/tools/bulk-send)。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2F3CgrVmzM4mq8BCUMZ3N3%2Fimage.png?alt=media&#x26;token=238aba5c-5a50-4fb5-9402-27f8da41579d" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tools-bulk-send.png" alt="Tools Bulk Send"><figcaption></figcaption></figure>
 
 ### 第 2 步：准备你的 CSV
 
@@ -43,7 +43,7 @@ description: 使用 SaveSender 在一个批次中向多个接收地址发送 TRX
 2. 上传你的 CSV。
 3. 核对预览。
 
-<figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2F3HOB1PO2cWSTkVO0P4JZ%2Fimage.png?alt=media&#x26;token=33ae8703-e698-4d04-8d85-631a23e506c5" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tools-bulk-send-token.png" alt="Tools Bulk Send Token"><figcaption></figcaption></figure>
 
 ### 第 5 步：授权代币（TRC20）
 
