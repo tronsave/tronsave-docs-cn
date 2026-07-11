@@ -1,8 +1,10 @@
 ---
-description: 租赁 TRON 能量与带宽 —— 并在几分钟内将其集成到你的应用中。
+description: >-
+  租赁 TRON 能量与带宽以降低 USDT（TRC‑20）转账手续费，并通过 TronSave REST API 或 SDK
+  将能量购买集成到你的应用中。
 ---
 
-# README
+# TronSave — 租赁 TRON 能量与带宽（文档 + API）
 
 **TronSave** 是一个用于租赁和管理 **TRON 能量与带宽**的市场。在进行 USDT（TRC‑20）转账等交易时，只需支付销毁 TRX 成本的一小部分；或通过出租你质押的 TRX 所产生的资源来赚取收益。
 
