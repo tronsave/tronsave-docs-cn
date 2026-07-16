@@ -1,5 +1,5 @@
 ---
-description: 在 TronSave 上购买的各种方式——普通订单、挂单、智能订单、ZapBuy、自动购买、快速充值。
+description: 概览 TronSave 的各种 TRON 能量购买方式：普通订单、挂单、智能订单、ZapBuy、自动购买与快速充值 API，并对比各类型的速度、时长与适用场景，助你选对下单方式。
 ---
 
 # 订单类型

@@ -1,5 +1,5 @@
 ---
-description: 获取与你的 TronSave API 密钥关联的内部账户信息，包括余额和充值地址。
+description: 获取内部账户信息接口参考：通过 apikey 请求头查询与 TronSave API 密钥关联的账户 ID、以 SUN 计的余额、代表地址与 TRX 充值地址，并附响应字段说明与示例。
 ---
 
 # 获取内部账户信息
