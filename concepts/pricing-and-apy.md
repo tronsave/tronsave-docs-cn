@@ -1,5 +1,5 @@
 ---
-description: 租赁价格如何设定，以及供应商 APY 如何计算。
+description: 说明 TronSave 的租赁定价与收益机制：买家通过 unitPrice（SUN）或价格档位定价，供应商 APY 由租赁收入复利加 TRON 投票奖励构成，并附完整公式与约 18% 的计算示例。
 ---
 
 # 定价与 APY

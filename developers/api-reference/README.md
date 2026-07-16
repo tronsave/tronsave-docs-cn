@@ -1,5 +1,5 @@
 ---
-description: TronSave REST API — 基础 URL、身份验证、版本管理、响应封装，以及指向每个端点分组的链接。
+description: TronSave REST API 参考总览：基础 URL、v2 版本管理、API 密钥与签名交易两种身份验证方式、统一响应封装，以及购买资源、续期订单、出售资源等端点分组导航。
 ---
 
 # TRON 能量 API 参考

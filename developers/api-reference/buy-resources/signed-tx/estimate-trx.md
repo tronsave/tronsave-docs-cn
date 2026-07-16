@@ -1,5 +1,5 @@
 ---
-description: 在创建签名交易订单之前，预估购买指定数量和租赁时长的能量或带宽所需的 TRX。
+description: 预估 TRX 接口参考：在创建签名交易订单前，按资源数量、租赁时长与价格档位计算所需 TRX，返回 unitPrice、estimateTrx 与市场可用资源量，并附多语言请求示例。
 ---
 
 # 预估 TRX

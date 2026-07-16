@@ -1,5 +1,5 @@
 ---
-description: TronSave 的订单簿市场如何撮合买家与供应商。
+description: 详解 TronSave 的双边订单簿租赁模式：买家与供应商如何撮合、SLOW/MEDIUM/FAST 价格档位的定价规则、订单成交状态，以及链上代理（委托）与租期回收机制。
 ---
 
 # 租赁模式

@@ -1,5 +1,5 @@
 ---
-description: TronSave 如何对 API 请求进行身份验证 — 内部账户、API 密钥和签名交易。
+description: 说明 TronSave API 的两种身份验证方式：绑定内部账户的 API 密钥与完全自托管的签名交易，并演示如何在网站或 Telegram 上获取、撤销和轮换你的 API 密钥。
 ---
 
 # 身份验证

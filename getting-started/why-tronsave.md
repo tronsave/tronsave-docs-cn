@@ -1,5 +1,5 @@
 ---
-description: TronSave 为买家和供应商带来的具体优势。
+description: 了解选择 TronSave 的理由：买家租赁 TRON 能量可节省高达约 92% 的交易手续费，几秒完成下单；供应商出租闲置质押 TRX 产生的能量，赚取约 18% 年化收益并保持完全自托管。
 ---
 
 # 为什么选择 TronSave？
