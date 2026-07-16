@@ -1,5 +1,5 @@
 ---
-description: TronSave API 返回的速率限制、HTTP 状态码和错误负载。
+description: 汇总 TronSave API 的速率限制（默认每秒 15 次请求）、统一响应结构、HTTP 状态码与错误码对照表，并给出 429 退避重试等常见错误的处理建议，助你构建健壮的集成。
 ---
 
 # 错误与速率限制

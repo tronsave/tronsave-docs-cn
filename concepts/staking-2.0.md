@@ -1,5 +1,5 @@
 ---
-description: TRON 质押 2.0 如何产生能量——TronSave 供应的基础。
+description: 介绍 TRON 质押 2.0 机制：质押 TRX 如何按全网份额产生能量、14 天解质押周期的注意事项，以及它为何是 TronSave 能量租赁市场供应端的基础。
 ---
 
 # 质押 2.0

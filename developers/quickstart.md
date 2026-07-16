@@ -1,5 +1,5 @@
 ---
-description: 完成你的第一次 TronSave API 调用 — 获取密钥、预估、购买并确认一笔能量订单，大约只需 10 分钟。
+description: TronSave API 开发者快速开始：约 10 分钟完成首次调用——获取 API 密钥并充值 TRX、预估费用、创建 TRON 能量订单并确认成交，附完整代码示例与测试网说明。
 ---
 
 # TRON 能量 API 快速开始

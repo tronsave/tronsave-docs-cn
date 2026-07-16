@@ -1,5 +1,5 @@
 ---
-description: TronSave 文档中通用的标准化术语。
+description: TronSave 文档术语表：集中解释能量、带宽、SUN、质押 2.0、代理（委托）、内部账户、API 密钥、签名交易等核心概念与常用 API 字段，帮助你快速读懂各页文档。
 ---
 
 # 术语表
