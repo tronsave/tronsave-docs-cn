@@ -1,5 +1,5 @@
 ---
-description: 提交一笔已签名的 TRON 交易以创建资源订单 — 签名交易购买流程的第 3 步。
+description: 创建订单接口参考：提交已签名的 TRON 交易以完成能量或带宽购买，是签名交易流程的最后一步；详列 signedTx、resourceAmount、options 等请求字段与响应示例。
 ---
 
 # 创建订单

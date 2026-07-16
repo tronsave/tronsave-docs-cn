@@ -1,5 +1,5 @@
 ---
-description: TronSave 是一个用于租赁和管理 TRON 能量与带宽的市场。
+description: TronSave 是基于 TRON 质押 2.0 的能量与带宽租赁市场：买家按需租用能量，将 USDT TRC-20 转账等操作手续费最多降低约 92%；供应商出租闲置质押资源赚取收益。
 ---
 
 # 什么是 TronSave？

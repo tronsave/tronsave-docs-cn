@@ -1,5 +1,5 @@
 ---
-description: TronSave 的两个 API 环境——主网和 Nile 测试网——以及如何在它们之间切换。
+description: 介绍 TronSave 的两个 API 环境：主网与 Nile 测试网。两者端点路径完全相同，只需替换基础域名即可切换，让你在不花费真实 TRX 的情况下测试能量租赁集成。
 ---
 
 # 环境
