@@ -11,7 +11,7 @@ description: TronSave 快速开始：约 10 分钟完成首次 TRON 能量购买
 1. 前往 [tronsave.io/market](https://tronsave.io/market) 并点击 **Connect** 连接你的 TRON 钱包（例如 TronLink）。
 2. 选择 **Buy**，然后设置：
    * **Resource**：能量（默认）或带宽
-   * **Amount**：例如 `32000` 能量（约等于一次 USDT TRC‑20 转账）
+   * **Amount**：例如 `65000` 能量（约等于一次 USDT TRC‑20 转账；若收款地址从未持有过 USDT，则约需 `130000`）
    * **Duration**：例如 1 小时或 3 天
    * **Price tier**：`MEDIUM` 是不错的默认值——参见[订单类型](../concepts/order-types.md)
 3. 确认并签名。订单匹配后，能量会在几秒内代理(委托)到你的地址。

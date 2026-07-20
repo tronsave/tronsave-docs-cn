@@ -78,7 +78,7 @@ Content-Type: application/json
 
 **请求字段：**
 
-<table><thead><tr><th width="182">字段</th><th width="182">示例</th><th>说明</th></tr></thead><tbody><tr><td><code>receiver</code></td><td><code>"TFwUFW..."</code></td><td>将接收能量的 TRON 地址</td></tr><tr><td><code>resourceAmount</code></td><td><code>32000</code></td><td>要购买的能量数量（单次 USDT TRC-20 转账约消耗 32,000 能量）</td></tr><tr><td><code>durationSec</code></td><td><code>259200</code></td><td>租赁时长（秒）—— <code>259200</code> = 3 天</td></tr><tr><td><code>unitPrice</code></td><td><code>"MEDIUM"</code></td><td>参见下方的价格表</td></tr></tbody></table>
+<table><thead><tr><th width="182">字段</th><th width="182">示例</th><th>说明</th></tr></thead><tbody><tr><td><code>receiver</code></td><td><code>"TFwUFW..."</code></td><td>将接收能量的 TRON 地址</td></tr><tr><td><code>resourceAmount</code></td><td><code>65000</code></td><td>要购买的能量数量（单次 USDT TRC-20 转账约消耗 65,000 能量；若收款地址从未持有过 USDT，则约需 130,000）</td></tr><tr><td><code>durationSec</code></td><td><code>259200</code></td><td>租赁时长（秒）—— <code>259200</code> = 3 天</td></tr><tr><td><code>unitPrice</code></td><td><code>"MEDIUM"</code></td><td>参见下方的价格表</td></tr></tbody></table>
 
 **选择 `unitPrice`：**
 
@@ -203,7 +203,7 @@ const TRONSAVE_API = "https://api.tronsave.io";
 const API_KEY = "YOUR_API_KEY";
 const RECEIVER = "YOUR_TRON_RECEIVER_ADDRESS";
 
-async function buyEnergy(amount = 32000, durationSec = 259200) {
+async function buyEnergy(amount = 65000, durationSec = 259200) {
   // Step 1: Estimate cost
   const estimateRes = await fetch(`${TRONSAVE_API}/v2/estimate-buy-resource`, {
     method: "POST",
