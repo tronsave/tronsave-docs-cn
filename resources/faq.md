@@ -58,7 +58,7 @@ Energy obtained = (frozen TRX / total network frozen TRX) × total network Energ
 
 ### 方法 3 — 在 TronSave 上购买能量
 
-通过 [TronSave](https://tronsave.io) 租赁能量可以节省手续费。你无需冻结大量 TRX 或额外燃烧 TRX，并且最多可节省 **92%** 的手续费。
+通过 [TronSave](https://tronsave.io) 租赁能量可以节省手续费。你无需冻结大量 TRX 或额外燃烧 TRX，并且通常可节省 **60–80%** 的手续费。
 
 请参阅 [订单类型](../concepts/order-types.md) 和 [快速开始](../getting-started/quickstart.md) 来开始使用。
 
