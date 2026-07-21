@@ -1,12 +1,12 @@
 ---
-description: 了解选择 TronSave 的理由：买家租赁 TRON 能量可节省高达约 92% 的交易手续费，几秒完成下单；供应商出租闲置质押 TRX 产生的能量，赚取约 18% 年化收益并保持完全自托管。
+description: 了解选择 TronSave 的理由：买家租赁 TRON 能量通常可节省约 60–80% 的交易手续费，几秒完成下单；供应商出租闲置质押 TRX 产生的能量，赚取约 18% 年化收益并保持完全自托管。
 ---
 
 # 为什么选择 TronSave？
 
 ## 对于买家
 
-* **节省高达约 92%** 的 TRON 交易费用——通过租赁能量来替代销毁 TRX。
+* **节省约 60–80%** 的 TRON 交易费用——通过租赁能量来替代销毁 TRX。
 * **几秒内完成租赁**——无论是个人还是项目方，都能在网页、Telegram 和 API 上获得简单流畅的操作体验。
 * **按需付费**——为每笔订单选择[数量、时长和价格档位](../concepts/order-types.md)。
 * **自动化操作**——集成 [API](../developers/quickstart.md) 或 [SDK](../developers/sdk.md)（TypeScript、Rust、Python、Java 和 PHP），让你的应用以编程方式自动补充资源。
