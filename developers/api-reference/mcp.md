@@ -133,7 +133,7 @@ TronSave [Model Context Protocol](https://modelcontextprotocol.io) 服务器将 
 
 **延长代理**（内部账户）：
 
-1. 用接收地址、`extendTo`（Unix **毫秒**）和 `maxPriceAccepted` 调用 `tronsave_internal_extend_delegates`，返回可延长的记录和 `extendData`。
+1. 用接收地址、`extendTo`（Unix **秒**；传毫秒会被拒绝并返回 `INVALID_EXTEND_TIME`）和 `maxPriceAccepted` 调用 `tronsave_internal_extend_delegates`，返回可延长的记录和 `extendData`。
 2. 将该 `extendData` 原样传给 `tronsave_internal_create_extend_request`。
 
 {% hint style="info" %}
