@@ -9,7 +9,7 @@ description: 说明 TronSave 的租赁定价与收益机制：买家通过 unitP
 租赁价格按每个订单通过 `unitPrice`（每资源单位的 SUN）设定 —— 既可以是固定数值，也可以是某个档位（`SLOW` / `MEDIUM` / `FAST`）。市场的实时订单簿决定某个档位最终对应的价格。关于具体的档位规则，请参阅 [租赁模型](rental-model.md#the-price-tiers)。
 
 * **1 TRX = 1,000,000 SUN。**
-* 下单前请始终先进行[预估](/broken/pages/sgNfEWCRfinn74vpkq9A)，以查看当前价格和可用供应量。
+* 下单前请始终先进行[预估](../developers/api-reference/buy-resources/api-key/estimate-trx.md)，以查看当前价格和可用供应量。
 
 ## 供应商 APY 如何计算
 
