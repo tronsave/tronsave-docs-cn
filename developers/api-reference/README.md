@@ -74,6 +74,7 @@ curl -X POST https://api.tronsave.io/v2/buy-resource \
 | [续期订单](extend-orders/README.md) | 查找可续期的代理（委托）并延长现有订单的时长。 |
 | [出售资源](sell-resources.md) | 列出并管理你向市场提供的资源。 |
 | [快速充值](fast-charge/README.md) | 快速补充资源 —— 预估、创建、跟踪、确认和取消订单。 |
+| [激活地址](activate-address/README.md) | 检查 TRON 地址是否已激活，并在一次请求中激活最多 100 个地址（每个 1.5 TRX）。 |
 | [MCP 服务器](mcp.md) | 使用 TronSave 的 Model Context Protocol 服务器从 AI 智能体驱动 API。 |
 
 ## 后续步骤
