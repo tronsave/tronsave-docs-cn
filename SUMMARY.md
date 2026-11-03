@@ -94,7 +94,7 @@
   * [自动出售](guides/sell/auto-sell.md)
   * [出售建议](guides/sell/sell-suggestion.md)
   * [专属供应商计划](guides/sell/exclusive-provider-program.md)
-* [提前解除质押](guides/unstake/README.md)
+* [提前解除质押（Flash Unstake）](guides/unstake/README.md)
   * [注册解除质押](guides/unstake/register-unstake.md)
   * [解除质押市场](guides/unstake/unstake-market.md)
 * [工具](guides/tools/README.md)
