@@ -1,16 +1,18 @@
 ---
-description: TronSave REST API 参考总览：基础 URL、v2 版本管理、API 密钥与签名交易两种身份验证方式、统一响应封装，以及购买资源、续期订单、出售资源等端点分组导航。
+description: >-
+  TronSave REST API 参考总览：基础 URL、v2 版本管理、API
+  密钥与签名交易两种身份验证方式、统一响应封装，以及购买资源、续期订单、出售资源等端点分组导航。
 ---
 
-# TRON 能量 API 参考
+# API 参考
 
 TronSave API 让你能够以编程方式在 TRON 网络上购买、续期和出售能量与带宽。每个端点都是通过 HTTPS 发起的 JSON REST 调用。
 
 ## 基础 URL
 
-| 环境 | API 基础 URL |
-| --- | --- |
-| 生产环境 | `https://api.tronsave.io` |
+| 环境         | API 基础 URL                    |
+| ---------- | ----------------------------- |
+| 生产环境       | `https://api.tronsave.io`     |
 | 测试网 (Nile) | `https://api-dev.tronsave.io` |
 
 端点通过路径前缀进行版本管理 —— 当前版本为 `v2`，例如 `https://api.tronsave.io/v2/buy-resource`。完整的主机和链列表请参阅 [环境与网络](../environments.md)。
@@ -38,7 +40,7 @@ curl -X POST https://api.tronsave.io/v2/buy-resource \
 `v2` 是当前 API，也是本参考文档全篇所记录的版本。此前的 `v0` API 仍可供现有集成使用。
 
 {% hint style="warning" %}
-新集成应使用 `v2`。旧版 `v0` API 仅出于向后兼容的目的进行维护 —— 参见 [旧版 API (v0)](../legacy-api-v0/README.md)。
+新集成应使用 `v2`。旧版 `v0` API 仅出于向后兼容的目的进行维护 —— 参见 [旧版 API (v0)](../legacy-api-v0/)。
 {% endhint %}
 
 ## 响应封装
@@ -53,31 +55,22 @@ curl -X POST https://api.tronsave.io/v2/buy-resource \
 }
 ```
 
-<table>
-  <thead>
-    <tr><th width="160">字段</th><th>说明</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><code>error</code></td><td>布尔标志 —— 成功时为 <code>false</code>，失败时为 <code>true</code>。</td></tr>
-    <tr><td><code>message</code></td><td>人类可读的状态或错误消息。</td></tr>
-    <tr><td><code>data</code></td><td>响应载荷（对象）—— 其结构取决于具体端点。</td></tr>
-  </tbody>
-</table>
+<table><thead><tr><th width="160">字段</th><th>说明</th></tr></thead><tbody><tr><td><code>error</code></td><td>布尔标志 —— 成功时为 <code>false</code>，失败时为 <code>true</code>。</td></tr><tr><td><code>message</code></td><td>人类可读的状态或错误消息。</td></tr><tr><td><code>data</code></td><td>响应载荷（对象）—— 其结构取决于具体端点。</td></tr></tbody></table>
 
 关于错误代码、HTTP 状态映射和速率限制行为，请参阅 [错误与速率限制](../errors-and-rate-limits.md)。
 
 ## 端点分组
 
-| 分组 | 功能 |
-| --- | --- |
-| [购买资源](buy-resources/README.md) | 预估成本并创建订单以购买能量或带宽，可通过签名交易或 API 密钥进行。 |
-| [续期订单](extend-orders/README.md) | 查找可续期的代理（委托）并延长现有订单的时长。 |
-| [出售资源](sell-resources.md) | 列出并管理你向市场提供的资源。 |
-| [快速充值](fast-charge/README.md) | 快速补充资源 —— 预估、创建、跟踪、确认和取消订单。 |
-| [激活地址](activate-address/README.md) | 检查 TRON 地址是否已激活，并在一次请求中激活最多 100 个地址（每个 1.5 TRX）。 |
-| [MCP 服务器](mcp.md) | 使用 TronSave 的 Model Context Protocol 服务器从 AI 智能体驱动 API。 |
+| 分组                        | 功能                                                      |
+| ------------------------- | ------------------------------------------------------- |
+| [购买资源](buy-resources/)    | 预估成本并创建订单以购买能量或带宽，可通过签名交易或 API 密钥进行。                    |
+| [续期订单](extend-orders/)    | 查找可续期的代理（委托）并延长现有订单的时长。                                 |
+| [出售资源](sell-resources/)   | 列出并管理你向市场提供的资源。                                         |
+| [快速充值](fast-charge/)      | 快速补充资源 —— 预估、创建、跟踪、确认和取消订单。                             |
+| [激活地址](activate-address/) | 检查 TRON 地址是否已激活，并在一次请求中激活最多 100 个地址（每个 1.5 TRX）。        |
+| [MCP 服务器](mcp.md)         | 使用 TronSave 的 Model Context Protocol 服务器从 AI 智能体驱动 API。 |
 
 ## 后续步骤
 
 * [开发者快速开始](../quickstart.md) · [身份验证](../authentication.md) · [环境与网络](../environments.md)
-* [购买资源](buy-resources/README.md) · [错误与速率限制](../errors-and-rate-limits.md)
+* [购买资源](buy-resources/) · [错误与速率限制](../errors-and-rate-limits.md)
