@@ -10,12 +10,6 @@ description: 获取 TronSave 市场中所有当前等待被匹配的活跃买单
 通过 Telegram 联系客服：[**@wantingtrx**](https://t.me/wantingtrx)
 {% endhint %}
 
-出售是一个两步流程：
-
-1. [**获取活跃订单**](sell-resources.md#step-1-get-active-orders) — 列出您可以成交的未完成买单。
-2. [**出售资源**](sell-resources.md#step-2-sell-the-resource) — 针对选定的订单提交一笔签名代理交易。
-3. [获取委托详情](https://docs.tronsave.io/developers/api-reference/sell-resources/sell-resources-2?utm_source=chatgpt.com) - 通过指定的 `delegateId`，获取对应委托的详细信息及当前状态。
-
 ## 端点
 
 返回可供撮合的全局活跃买单列表。

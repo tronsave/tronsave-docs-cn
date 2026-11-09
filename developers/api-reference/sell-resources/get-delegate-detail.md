@@ -26,7 +26,7 @@ description: 根据 Delegate ID 获取指定委托的详细信息。
 
 #### 路径参数（Path parameters）
 
-<table><thead><tr><th width="221">名称（Name）</th><th width="172">类型（Type）</th><th>描述（Description）</th></tr></thead><tbody><tr><td><code>delegateId</code></td><td>string</td><td>要查询的资源委托的唯一 ID。（<a href="./">出售资源</a>）</td></tr></tbody></table>
+<table><thead><tr><th width="221">名称（Name）</th><th width="172">类型（Type）</th><th>描述（Description）</th></tr></thead><tbody><tr><td><code>delegateId</code></td><td>string</td><td>要查询的资源委托的唯一 ID。（<a href="sell-the-resources.md">出售资源</a>）</td></tr></tbody></table>
 
 ### 响应
 
