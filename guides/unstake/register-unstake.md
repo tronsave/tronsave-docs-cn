@@ -38,12 +38,12 @@ description: 在 TronSave 上注册提前解质押，无需等待官方解质押
 
 #### 此步骤的流动性检查
 
-* 如果解质押金额超过当前系统流动性，你的请求需要管理员和供应商手动审批。审批通过后，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
+* 如果解质押金额超过审核阈值（默认 50,000 TRX），你的请求需要管理团队审批。审批通过后，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
 * <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>**建议：**加入我们的 Bot，以便在请求获批时即时收到通知。</p></div>
 
 <figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FaUNoQ28DQxk9g4XpcjvO%2Fimage.png?alt=media&#x26;token=004576ef-2d0b-45f8-b95f-0531e3977634" alt="" width="563"><figcaption></figcaption></figure>
 
-* 如果系统流动性充足，你的请求将自动获批，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
+* 不超过阈值的请求无需此审核，你可以继续进行[步骤 5](register-unstake.md#step-5-check-balance)。
 
 <figure><img src="https://1055070949-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fh0rlDWTk05Qu3lvB5Gve%2Fuploads%2FUAgdqUNnu0jKvXWZ4WIw%2Fimage.png?alt=media&#x26;token=120505e1-57d2-4d21-9603-932ecc47c198" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -81,8 +81,8 @@ TXUwRhntqX3kyALhtpC74JP8Nt6m2VMiYC
 如果经过 24 小时处理后流动性仍然不可用，你的解质押订单将被挂到市场上，由供应商手动撮合。
 
 {% hint style="info" %}
-* 你可以**随时取消解质押请求**。
-* 取消后，系统将**恢复你的钱包权限**。
+* 在**转移权限之前**，你可以随时取消解质押请求。
+* 在**转移权限之后**，如果请求在确认 24 小时后仍未获得资金，你可以取消。系统会将你的地址恢复为唯一的所有者和活跃密钥（之前的多签设置不会恢复），并发送 100 TRX 用于支付此变更。
 {% endhint %}
 
 ## 2. 安全与注意事项
