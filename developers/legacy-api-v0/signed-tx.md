@@ -114,7 +114,7 @@ TATT1UzHRikft98bRFqApFTsaSw73ycfoS
 {% endtab %}
 {% endtabs %}
 
-### 选项 1：编写你自己的函数
+### 编写你自己的函数
 
 使用 `tronWeb`，为 `estimate_trx`（来自第 1 步）构建一笔 `sendTrx` 转账，并用买家的私钥签名：
 
@@ -128,79 +128,6 @@ const signed_tx = await tronWeb.trx.sign(dataSendTrx, 'PRIVATE_KEY');
 * `PRIVATE_KEY` 是买家的私钥。
 * `TRONSAVE_FUND_ADDRESS` 是上面显示的 TronSave 资金地址。
 {% endhint %}
-
-### 选项 2：使用获取签名交易 API
-
-<mark style="color:orange;">**`POST`**</mark> **`https://api.tronsave.io/v0/signed-tx`**
-
-{% hint style="info" %}
-**速率限制：** 每 1 秒 15 个请求。
-{% endhint %}
-
-#### 请求头
-
-| 请求头            | 值                  | 是否必需 |
-| -------------- | ------------------ | ---- |
-| `Content-Type` | `application/json` | 是    |
-
-#### 请求参数
-
-<table><thead><tr><th width="166">字段</th><th width="112">位置</th><th width="110">类型</th><th width="101">是否必需</th><th>说明</th></tr></thead><tbody><tr><td><code>address</code></td><td>body</td><td>string</td><td>true</td><td>买家的公开地址</td></tr><tr><td><code>private_key</code></td><td>body</td><td>string</td><td>true</td><td>买家的私钥</td></tr><tr><td><code>estimate_trx</code></td><td>body</td><td>number</td><td>true</td><td>需支付的 TRX 数量，以 SUN 计算。（来自<a href="signed-tx.md#step-1-estimate-trx">第 1 步</a>的 <code>estimate_trx</code>）</td></tr></tbody></table>
-
-#### 请求体示例
-
-```json
-{
-    "address": "TM6ZeEgpefyGWeMLuzSbfqTGkPv8Z65432",
-    "private_key": "{{yourprivateKey}}",
-    "estimate_trx": 13500000
-}
-```
-
-#### 响应
-
-**成功**
-
-```json
-{
-    "visible": false,
-    "txID": "446eed36e31249b98b201db2e81a3825b185f1a3d8b2fea348b24fc021e58e0d",
-    "raw_data": {
-        "contract": [
-            {
-                "parameter": {
-                    "value": {
-                        "amount": 13500000,
-                        "owner_address": "417a0d868d1418c9038584af1252f85d486502eec0",
-                        "to_address": "41055756f33f419278d9ea059bd2b21120e6add748"
-                    },
-                    "type_url": "type.googleapis.com/protocol.TransferContract"
-                },
-                "type": "TransferContract"
-            }
-        ],
-        "ref_block_bytes": "0713",
-        "ref_block_hash": "6c5f7686f4176139",
-        "expiration": 1691465106000,
-        "timestamp": 1691465046758
-    },
-    "raw_data_hex": "0a02071322086c5f7686f417613940d084b5999d315a68080112640a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412330a15417a0d868d1418c9038584af1252f85d486502eec0121541055756f33f419278d9ea059bd2b21120e6add74818e0fcb70670e6b5b1999d31",
-    "signature": ["xxxxxxxxx"]
-}
-```
-
-**错误**
-
-此端点不需要 `apikey` 请求头。当请求缺少必需字段或字段无效时，会返回 `400 Bad Request`，其 `message` 会指出出错的字段：
-
-```json
-{
-    "statusCode": 400,
-    "code": "FST_ERR_VALIDATION",
-    "error": "Bad Request",
-    "message": "body must have required property 'estimate_trx'"
-}
-```
 
 ***
 
